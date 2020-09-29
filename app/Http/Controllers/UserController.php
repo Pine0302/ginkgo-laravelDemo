@@ -45,7 +45,7 @@ class UserController extends Controller
 
 
         $data = [
-            'appid'=>$jssdkInfo['appId'],
+            'appId'=>$jssdkInfo['appId'],
             'timestamp'=>$jssdkInfo['timestamp'],
             'nonceStr'=>$jssdkInfo['nonceStr'],
             'signature'=>$jssdkInfo['signature'],
@@ -132,7 +132,7 @@ class UserController extends Controller
 
 
         $data = [
-            'appid'=>$jssdkInfo['appId'],
+            'appId'=>$jssdkInfo['appId'],
             'timestamp'=>$jssdkInfo['timestamp'],
             'nonceStr'=>$jssdkInfo['nonceStr'],
             'signature'=>$jssdkInfo['signature'],
@@ -140,7 +140,7 @@ class UserController extends Controller
         return response()->json([
             'status' => 1,
             'msg' => 'success',
-            'data'=>$data,
+            'data'=>$jssdkInfo,
         ]);
     }
 
