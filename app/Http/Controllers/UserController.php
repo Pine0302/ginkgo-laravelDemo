@@ -122,5 +122,26 @@ class UserController extends Controller
         ]);
     }
 
+    public function jssdk(Request $request)
+    {
+        $APIs = [
+            'updateAppMessageShareData',
+            'updateTimelineShareData'
+        ];
+        $jssdkInfo = $this->wechat_app->jssdk->buildConfig( $APIs, false, false, false);
+
+
+        $data = [
+            'appid'=>$jssdkInfo['appId'],
+            'timestamp'=>$jssdkInfo['timestamp'],
+            'nonceStr'=>$jssdkInfo['nonceStr'],
+            'signature'=>$jssdkInfo['signature'],
+        ];
+        return response()->json([
+            'status' => 1,
+            'msg' => 'success',
+            'data'=>$data,
+        ]);
+    }
 
 }

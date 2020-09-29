@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 Route::get('/user', 'UserController@index');
+Route::get('/jssdk', 'UserController@jssdk');
 Route::get('/', 'UserController@Home');
 Route::post('/user', 'UserController@collect');
 Route::post('/user_visit', 'UserController@collectVisit');

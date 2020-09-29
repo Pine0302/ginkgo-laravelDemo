@@ -15,5 +15,6 @@ class VerifyCsrfToken extends Middleware
         //
         "http://ginkgo.pinecc.cn/user",
         "http://ginkgo.pinecc.cn/user_visit",
+        "http://ginkgo.pinecc.cn/jssdk",
     ];
 }
