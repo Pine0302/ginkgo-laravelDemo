@@ -38,7 +38,7 @@ loadImages(function() {
 function loadImages(callback) {
     callback = callback ? callback : function() {};
     var imagesLoad = new common.imgload();
-    imagesLoad.file = ['./images/back-btn.png', './images/bg.png', './images/btn1.png', './images/btn2.png','./images/font1-1.png','./images/fon1-2.png','./images/font1-3.png','./images/font2-1.png','./images/font2-2.png','./images/font-tip.png','./images/loading.png','./images/logo.png','./images/s-bg.png','./images/s-tip.png','./images/submit-btn.png'];
+    imagesLoad.file = ['./images/back-btn.png', './images/bg.png', './images/btn1.png', './images/btn2.png','./images/font1-1.png','./images/fon1-2.png','./images/font1-3.png','./images/font2-1.png','./images/font2-2.png','./images/font-tip.png','./images/loading.png','./images/logo.png','./images/s-bg.png','./images/s-tip.png','./images/submit-btn.png','./images/imgUrl.jpg'];
     imagesLoad.callbackFn = function(res) {
         // $('.js-load-bar').text(res);
         if (res == '100%') return callback();
