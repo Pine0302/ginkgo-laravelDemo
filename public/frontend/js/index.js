@@ -110,8 +110,8 @@ function onSubmitVisit() {
                 },
                 success:function(){
                     alert('预约成功！');
-                    $("#name").val("");
-                    $("#mobile").val("");
+                    $("#name2").val("");
+                    $("#mobile2").val("");
                     $("#dates2").val("");
                     $("#dates3").val("");
                     $(".input5").attr('placeholder','预约日期');
