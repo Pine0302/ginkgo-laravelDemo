@@ -18,7 +18,7 @@ var mySwiper = new Swiper('.swiper-container', {
 
     },
     onInit: function(swiper) { //Swiper2.x的初始化是onFirstInit
-        swiperAnimateCache(swiper); //隐藏动画元素 
+        swiperAnimateCache(swiper); //隐藏动画元素
         swiperAnimate(swiper); //初始化完成开始动画
     },
     onSlideChangeEnd: function(swiper) {
@@ -38,7 +38,10 @@ loadImages(function() {
 function loadImages(callback) {
     callback = callback ? callback : function() {};
     var imagesLoad = new common.imgload();
-    imagesLoad.file = ['./images/back-btn.png', './images/bg.png', './images/btn1.png', './images/btn2.png','./images/font1-1.png','./images/fon1-2.png','./images/font1-3.png','./images/font2-1.png','./images/font2-2.png','./images/font-tip.png','./images/loading.png','./images/logo.png','./images/s-bg.png','./images/s-tip.png','./images/submit-btn.png','./images/imgUrl.jpg'];
+    imagesLoad.file = ['./frontend/images/back-btn.png', './frontend/images/bg.png', './frontend/images/btn1.png', './frontend/images/btn2.png',
+                       './frontend/images/font1-1.png','./frontend/images/font1-2.png','./frontend/images/font1-3.png','./frontend/images/font2-1.png',
+                        './frontend/images/font2-2.png','./frontend/images/font-tip.png','./frontend/images/loading.png','./frontend/images/logo.png',
+                        './frontend/images/s-bg.png','./frontend/images/s-tip.png','./frontend/images/submit-btn.png','./frontend/images/imgUrl.jpg'];
     imagesLoad.callbackFn = function(res) {
         $('.js-load-bar').text(res);
         if (res == '100%') return callback();
@@ -154,7 +157,7 @@ $(document).ready(function(){
                 var str = year + '-' + month + '-' + day
                 $("#dates2").val(str);
             }, 500)
-            
+
         } else {
             mySwiper.slideNext();
             $('.page2 .content').css('display', 'block');
@@ -167,7 +170,7 @@ $(document).ready(function(){
         } else {
             onSubmit();
         }
-        
+
     });
 
 
