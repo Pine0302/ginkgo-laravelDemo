@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>银杏汇</title>
+    <title>微楼书</title>
     <meta name="viewport" content="width=device-width, minimum-scale = 1, maximum-scale =1, target-densitydpi=device-dpi">
     <link rel="stylesheet" href="../../frontend/css/swiper-3.3.1.min.css">
     <link rel="stylesheet" href="../../frontend/css/effect.css">
@@ -125,10 +125,10 @@
     });
     wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
         wx.updateAppMessageShareData({
-            title: '德圣银杏汇', // 分享标题
-            desc: '恭迎阁下预约品鉴', // 分享描述
+            title: '微楼书', // 分享标题
+            desc: '微楼书', // 分享描述
             link: "{{$url}}", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-            imgUrl: 'http://ginkgo.pinecc.cn/frontend/images/imgUrl.jpg', // 分享图标
+            imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.jpg', // 分享图标
             success: function () {
                 // 设置成功
             }
@@ -136,7 +136,7 @@
         wx.updateTimelineShareData({
             title: '德圣银杏汇', // 分享标题
             link: "{{$url}}", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-            imgUrl: 'http://ginkgo.pinecc.cn/frontend/images/imgUrl.jpg', // 分享图标
+            imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.jpg', // 分享图标
             success: function () {
                 // 设置成功
             }
@@ -145,7 +145,7 @@
 
     /*$.ajax({
         type: "GET",
-        url: "http://ginkgo.pinecc.cn/jssdk",
+        url: "http://wls.pinecc.cn/jssdk",
         data: {
             url: window.location.href
         },
@@ -184,8 +184,8 @@
             var shareData = {
                 title: '德圣银杏汇',
                 desc: '恭迎阁下预约品鉴',
-                link: 'http://ginkgo.pinecc.cn',
-                imgUrl: 'http://ginkgo.pinecc.cn/images/imgUrl.jpg',
+                link: 'http://wls.pinecc.cn',
+                imgUrl: 'http://wls.pinecc.cn/images/imgUrl.jpg',
                 trigger: function (res) {
                     //alert('用户点击');
                 },
