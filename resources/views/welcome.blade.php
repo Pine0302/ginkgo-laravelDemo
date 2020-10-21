@@ -70,8 +70,8 @@
                 <img src="../../frontend/images/img2-2_03.png" class="img2-2_03 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="0.9s" data-page="2">
                 <img src="../../frontend/images/img2-2_04.png" class="img2-2_04 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration=".8s" swiper-animate-delay="1.2s" data-page="2">
                 <img src="../../frontend/images/img2-2_05.png" class="img2-2_05 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="1.5s" data-page="3">
-                <img src="../../frontend/images/arrow-down.png" class="arrow">
             </div>
+            <img src="../../frontend/images/arrow-down.png" class="arrow">
         </div>
         <div class="swiper-slide page3">
             <img src="../../frontend/images/tip.png" class="tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".8s">
