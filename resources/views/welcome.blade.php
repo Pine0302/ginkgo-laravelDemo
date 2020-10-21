@@ -61,7 +61,7 @@
             <img src="../../frontend/images/s-tip.png" class="s-tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".8s" swiper-animate-delay="0.8s">
             <img src="../../frontend/images/arrow-down.png" class="arrow">
         </div>
-        <div class="swiper-slide page2 stop-swiping">
+        <div class="swiper-slide page2">
             <img src="../../frontend/images/font2-1.png" class="font2-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
             <img src="../../frontend/images/img2-1.png" class="img2-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
             <div class="img-list">
@@ -70,9 +70,10 @@
                 <img src="../../frontend/images/img2-2_03.png" class="img2-2_03 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="0.9s" data-page="2">
                 <img src="../../frontend/images/img2-2_04.png" class="img2-2_04 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration=".8s" swiper-animate-delay="1.2s" data-page="2">
                 <img src="../../frontend/images/img2-2_05.png" class="img2-2_05 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="1.5s" data-page="3">
+                <img src="../../frontend/images/arrow-down.png" class="arrow">
             </div>
         </div>
-        <div class="swiper-slide page3 stop-swiping">
+        <div class="swiper-slide page3">
             <img src="../../frontend/images/tip.png" class="tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".8s">
             <img src="../../frontend/images/back-btn.png" class="back-btn" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
             <img src="../../frontend/images/img3-1.png" class="img3-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".8s" swiper-animate-delay="0.3s">
@@ -85,6 +86,7 @@
                 <img src="../../frontend/images/font3-3_03.png" class="font3-3_03 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="1.8s">
                 <img src="../../frontend/images/font3-3_04.png" class="font3-3_04 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="2.1s">
             </div>
+            <img src="../../frontend/images/arrow-down.png" class="arrow">
         </div>
         <div class="swiper-slide page12 stop-swiping">
             <img src="../../frontend/images/back-btn.png" class="back-btn" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
