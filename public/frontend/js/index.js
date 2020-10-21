@@ -18,7 +18,7 @@ var mySwiper = new Swiper('.swiper-container', {
 
     },
     onInit: function(swiper) { //Swiper2.x的初始化是onFirstInit
-        swiperAnimateCache(swiper); //隐藏动画元素 
+        swiperAnimateCache(swiper); //隐藏动画元素
         swiperAnimate(swiper); //初始化完成开始动画
     },
     onSlideChangeEnd: function(swiper) {
@@ -38,7 +38,7 @@ loadImages(function() {
 function loadImages(callback) {
     callback = callback ? callback : function() {};
     var imagesLoad = new common.imgload();
-    imagesLoad.file = ['../images/arrow-down.png', '../images/arrow-right.png', '../images/back-btn.png', '../images/bg.png', '../images/bg2.png', '../images/font1-1_01.png', '../images/font1-1_02.png', '../images/font1-1_03.png', '../images/font1-1_04.png', '../images/font1-1_05.png', '../images/font1-1_06.png', '../images/font1-1_07.png', '../images/font1-2.png', '../images/font2-1.png', '../images/font2-2.png', '../images/font3-2.png', '../images/font3-3_01.png', '../images/font3-3_02.png', '../images/font3-3_03.png', '../images/font3-3_04.png', '../images/font12-1.png', '../images/font12-2_01.png', '../images/font12-2_02.png', '../images/font12-2_03.png', '../images/font12-3_01.png', '../images/font12-3_02.png', '../images/font-tip.png', '../images/img1-1.png', '../images/img1-2.png', '../images/img1-3.png', '../images/img2-1.png', '../images/img2-2_01.png', '../images/img2-2_02.png', '../images/img2-2_03.png', '../images/img2-2_04.png', '../images/img2-2_05.png', '../images/img3-1.png', '../images/img3-2.png', '../images/img12-1.png', '../images/img13-1.png', '../images/line.png', '../images/loading.png', '../images/logo.png', '../images/s-logo.png', '../images/s-tip.png', '../images/tip.png', '../images/tip13.png'];
+    imagesLoad.file = ['../../frontend/images/arrow-down.png', '../../frontend/images/arrow-right.png', '../../frontend/images/back-btn.png', '../../frontend/images/bg.png', '../../frontend/images/bg2.png', '../../frontend/images/font1-1_01.png', '../../frontend/images/font1-1_02.png', '../../frontend/images/font1-1_03.png', '../../frontend/images/font1-1_04.png', '../../frontend/images/font1-1_05.png', '../../frontend/images/font1-1_06.png', '../../frontend/images/font1-1_07.png', '../../frontend/images/font1-2.png', '../../frontend/images/font2-1.png', '../../frontend/images/font2-2.png', '../../frontend/images/font3-2.png', '../../frontend/images/font3-3_01.png', '../../frontend/images/font3-3_02.png', '../../frontend/images/font3-3_03.png', '../../frontend/images/font3-3_04.png', '../../frontend/images/font12-1.png', '../../frontend/images/font12-2_01.png', '../../frontend/images/font12-2_02.png', '../../frontend/images/font12-2_03.png', '../../frontend/images/font12-3_01.png', '../../frontend/images/font12-3_02.png', '../../frontend/images/font-tip.png', '../../frontend/images/img1-1.png', '../../frontend/images/img1-2.png', '../../frontend/images/img1-3.png', '../../frontend/images/img2-1.png', '../../frontend/images/img2-2_01.png', '../../frontend/images/img2-2_02.png', '../../frontend/images/img2-2_03.png', '../../frontend/images/img2-2_04.png', '../../frontend/images/img2-2_05.png', '../../frontend/images/img3-1.png', '../../frontend/images/img3-2.png', '../../frontend/images/img12-1.png', '../../frontend/images/img13-1.png', '../../frontend/images/line.png', '../../frontend/images/loading.png', '../../frontend/images/logo.png', '../../frontend/images/s-logo.png', '../../frontend/images/s-tip.png', '../../frontend/images/tip.png', '../../frontend/images/tip13.png'];
     imagesLoad.callbackFn = function(res) {
         $('.js-load-bar').text(res);
         if (res == '100%') return callback();
@@ -87,7 +87,7 @@ $(document).ready(function(){
         if(scroL > 1.5 * viewL){
             $('.arrow-right').hide();
         }
- 
+
     });
-    
+
 })
