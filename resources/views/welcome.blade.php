@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>微楼书</title>
-    <meta name="viewport" content="width=device-width, minimum-scale = 1, maximum-scale =1, target-densitydpi=device-dpi">
+    <title>大家</title>
+    <meta name="viewport" content="width=device-width, minimum-scale = 1, maximum-scale =3, target-densitydpi=device-dpi">
     <link rel="stylesheet" href="../../frontend/css/swiper-3.3.1.min.css">
     <link rel="stylesheet" href="../../frontend/css/effect.css">
     <link rel="stylesheet" href="../../frontend/css/index.css">
@@ -22,139 +22,107 @@
 <!-- <div class="audio-btn play">
     <img src="../../frontend/images/musicon.png">
 </div> -->
+<div class="page13-hide">
+    <img src="../../frontend/images/tip13.png" class="tip13">
+    <img src="../../frontend/images/img13-2.png" class="img13-2">
+    <img src="../../frontend/images/back-btn.png" class="back-btn-fixed">
+    <img src="../../frontend/images/arrow-right.png" class="arrow-right">
+</div>
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide page0 stop-swiping">
             <div id="loading">
                 <div class="inner">
-                    <img src="/../frontend/images/loading.png">
+                    <img src="../../frontend/images/loading.png">
                     <div class="bar js-load-bar">
                         3%
                     </div>
                 </div>
             </div>
         </div>
-        <div class="swiper-slide page1 stop-swiping">
-            <div class="content">
-                <img src="../../frontend/images/logo.png" class="logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
-                <img src="../../frontend/images/font1-1.png" class="font1-1 ani" swiper-animate-effect="slideInDown" swiper-animate-duration=".8s">
-                <img src="../../frontend/images/font1-2.png" class="font1-2 ani" swiper-animate-effect="slideInDown" swiper-animate-duration=".8s">
-                <img src="../../frontend/images/font1-3.png" class="font1-3 ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".8s">
-                <img src="../../frontend/images/font-tip.png" class="font-tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".8s">
-                <img src="../../frontend/images/s-tip.png" class="s-tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".8s">
-                <div class="btn-panel ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
-                    <img src="../../frontend/images/btn1.png" class="btn btn1" data-value="1">
-                    <img src="../../frontend/images/btn2.png" class="btn btn2" data-value="2">
-                </div>
+        <div class="swiper-slide page1">
+            <img src="../../frontend/images/img1-1.png" class="img1-1">
+            <img src="../../frontend/images/s-logo.png" class="s-logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
+            <img src="../../frontend/images/logo.png" class="logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
+            <div class="font1-1">
+                <img src="../../frontend/images/font1-1_01.png" class="font1-1_01 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
+                <img src="../../frontend/images/font1-1_02.png" class="font1-1_02 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
+                <img src="../../frontend/images/font1-1_03.png" class="font1-1_03 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.9s">
+                <img src="../../frontend/images/font1-1_04.png" class="font1-1_04 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="1.2s">
+                <img src="../../frontend/images/font1-1_05.png" class="font1-1_05 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="1.5s">
+                <img src="../../frontend/images/font1-1_06.png" class="font1-1_06 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="1.8s">
+                <img src="../../frontend/images/font1-1_07.png" class="font1-1_07 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="2.1s">
             </div>
+            <div class="img1-2 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s"  swiper-animate-delay="0.6s">
+                <img src="../../frontend/images/img1-2.png" class="img1-2 ani infinite" swiper-animate-effect="moveRight" swiper-animate-duration="15s">
+            </div>
+            <img src="../../frontend/images/img1-3.png" class="img1-3 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".8s" swiper-animate-delay="0.3s">
+            <img src="../../frontend/images/font1-2.png" class="font1-2 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".8s" swiper-animate-delay="0.8s">
+            <img src="../../frontend/images/s-tip.png" class="s-tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".8s" swiper-animate-delay="0.8s">
+            <img src="../../frontend/images/arrow-down.png" class="arrow">
         </div>
         <div class="swiper-slide page2 stop-swiping">
-            <div class="head-panel">
-                <img src="../../frontend/images/logo.png" class="logo">
-                <img src="../../frontend/images/font2-1.png" class="font2-1">
-                <img src="../../frontend/images/font2-2.png" class="font2-2">
+            <img src="../../frontend/images/font2-1.png" class="font2-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
+            <img src="../../frontend/images/img2-1.png" class="img2-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
+            <div class="img-list">
+                <img src="../../frontend/images/img2-2_01.png" class="img2-2_01 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="0.3s" data-page="2">
+                <img src="../../frontend/images/img2-2_02.png" class="img2-2_02 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration=".8s" swiper-animate-delay="0.6s" data-page="2">
+                <img src="../../frontend/images/img2-2_03.png" class="img2-2_03 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="0.9s" data-page="2">
+                <img src="../../frontend/images/img2-2_04.png" class="img2-2_04 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration=".8s" swiper-animate-delay="1.2s" data-page="2">
+                <img src="../../frontend/images/img2-2_05.png" class="img2-2_05 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="1.5s" data-page="3">
             </div>
-            <div class="content">
-                <div class="form-panel">
-                    <div class="input-box">
-                        <input class="input1" type="text" placeholder="姓名" id="name"/>
-                        <input class="input2" type="tel" placeholder="手机号" id="mobile"/>
-                        <input class="input3" type="text" placeholder="预约时间"/>
-                        <input class="input4" type="text" placeholder="随行人员数量"/>
-                    </div>
-
-                    <div class="input-box">
-                        <input type="datetime-local" class="input3 date-input1" id="dates"/>
-                        <select class="input4 select1" id="num">
-                            <option disabled="" selected="" style="display:none;" value=""></option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6 </option>
-                        </select>
-                        <img src="../../frontend/images/submit-btn.png" class="submit-btn">
-                    </div>
-                </div>
+        </div>
+        <div class="swiper-slide page3 stop-swiping">
+            <img src="../../frontend/images/tip.png" class="tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".8s">
+            <img src="../../frontend/images/back-btn.png" class="back-btn" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
+            <img src="../../frontend/images/img3-1.png" class="img3-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".8s" swiper-animate-delay="0.3s">
+            <img src="../../frontend/images/font-tip.png" class="font-tip ani" swiper-animate-effect="slideInLeft" swiper-animate-duration=".8s" swiper-animate-delay="0.6s">
+            <img src="../../frontend/images/font3-2.png" class="font3-2 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.9s">
+            <img src="../../frontend/images/line.png" class="line ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="1s">
+            <div class="font3-3">
+                <img src="../../frontend/images/font3-3_01.png" class="font3-3_01 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="1.2s">
+                <img src="../../frontend/images/font3-3_02.png" class="font3-3_02 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="1.5s">
+                <img src="../../frontend/images/font3-3_03.png" class="font3-3_03 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="1.8s">
+                <img src="../../frontend/images/font3-3_04.png" class="font3-3_04 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="2.1s">
             </div>
-
-            <div class="content2">
-                <div class="form-panel">
-                    <div class="input-box">
-                        <input class="input1" type="text" placeholder="姓名" id="name2"/>
-                        <input class="input2" type="tel" placeholder="手机号" id="mobile2"/>
-
-                        <input class="input5" type="text" placeholder="预约日期"/>
-                        <input class="input6" type="text" placeholder="预约到访时间"/>
-                        <input class="input7" type="text" placeholder="随行人员数量"/>
-                    </div>
-
-
-                    <div class="input-box">
-                        <input type="date" class="input5 date-input2" id="dates2"/>
-                        <input type="datetime-local" class="input6 date-input3" id="dates3"/>
-                        <select class="input7 select2" id="num">
-                            <option disabled="" selected="" style="display:none;" value=""></option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6 </option>
-                        </select>
-                        <img src="../../frontend/images/submit-btn.png" class="submit-btn">
-                    </div>
-                </div>
+        </div>
+        <div class="swiper-slide page12 stop-swiping">
+            <img src="../../frontend/images/back-btn.png" class="back-btn" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
+            <img src="../../frontend/images/img12-1.png" class="img12-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
+            <img src="../../frontend/images/font12-1.png" class="font12-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
+            <div class="font12-2">
+                <img src="../../frontend/images/font12-2_01.png" class="font12-2_01 ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".5s" swiper-animate-delay="0.3s" data-page="4">
+                <img src="../../frontend/images/font12-2_02.png" class="font12-2_02 ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".5s" swiper-animate-delay="0.6s" data-page="4">
+                <img src="../../frontend/images/font12-2_03.png" class="font12-2_03 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.9s" data-page="4">
             </div>
-            <img src="../../frontend/images/back-btn.png" class="back-btn">
+            <div class="font12-3">
+                <img src="../../frontend/images/font12-3_01.png" class="font12-3_01 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="1.2s">
+                <img src="../../frontend/images/font12-3_02.png" class="font12-3_02 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="1.5s">
+            </div>
+            <img src="../../frontend/images/font-tip.png" class="font-tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
+        </div>
+
+        <div class="swiper-slide page13 stop-swiping">
+            <div class="inner">
+                <img src="../../frontend/images/img13-1.png" class="img13-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
+
+            </div>
         </div>
     </div>
 </div>
-<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
 <script type="text/javascript" src="../../frontend/js/index.js"></script>
 <script>
-
-    wx.config({
-        debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
-        appId: "{{ $appId }}", // 必填，公众号的唯一标识
-        timestamp: {{$timestamp}}, // 必填，生成签名的时间戳
-        nonceStr: "{{$nonceStr}}", // 必填，生成签名的随机串
-        signature: "{{$signature}}",// 必填，签名
-        jsApiList: ['updateAppMessageShareData','updateTimelineShareData'] // 必填，需要使用的JS接口列表
-    });
-    wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
-        wx.updateAppMessageShareData({
-            title: '微楼书', // 分享标题
-            desc: '微楼书', // 分享描述
-            link: "{{$url}}", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-            imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.jpg', // 分享图标
-            success: function () {
-                // 设置成功
-            }
-        });
-        wx.updateTimelineShareData({
-            title: '德圣银杏汇', // 分享标题
-            link: "{{$url}}", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-            imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.jpg', // 分享图标
-            success: function () {
-                // 设置成功
-            }
-        })
-    });
-
-    /*$.ajax({
+    $.ajax({
         type: "GET",
-        url: "http://wls.pinecc.cn/jssdk",
+        url: "",
         data: {
             url: window.location.href
         },
         dataType: "json",
         success: function(data) {
-            data = data.data;
-            console.log(data);
             wx.config({
-                debug: true,
+                debug: false,
                 appId: data.appId,
                 timestamp: data.timestamp,
                 nonceStr: data.nonceStr,
@@ -182,10 +150,10 @@
             });
 
             var shareData = {
-                title: '德圣银杏汇',
-                desc: '恭迎阁下预约品鉴',
-                link: 'http://wls.pinecc.cn',
-                imgUrl: 'http://wls.pinecc.cn/images/imgUrl.jpg',
+                title: '',
+                desc: '',
+                link: '',
+                imgUrl: '',
                 trigger: function (res) {
                     //alert('用户点击');
                 },
@@ -207,7 +175,7 @@
         },
         error: function(data) {
         }
-    })*/
+    })
 
 </script>
 </body>
