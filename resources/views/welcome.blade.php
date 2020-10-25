@@ -246,7 +246,7 @@
                     <a href="https://www.amap.com/place/B0FFGQ991E">
                         <img src="../../frontend/images/btn-nav.png" class="btn-nav ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
                     </a>
-                    <a href="tel:88990088">
+                    <a href="tel:0575-88990088">
                         <img src="../../frontend/images/btn-tel.png" class="btn-tel ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
                     </a>
                 </div>
