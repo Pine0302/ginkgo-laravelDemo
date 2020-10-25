@@ -313,18 +313,18 @@
 
         wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
             wx.updateAppMessageShareData({
-                title: '微楼书', // 分享标题
-                desc: '微楼书', // 分享描述
+                title: '大家湛景满园', // 分享标题
+                desc: '稽山下 二环里 宋韵美学著品', // 分享描述
                 link: "{{$url}}", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-                imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.jpg', // 分享图标
+                imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.png', // 分享图标
                 success: function () {
                     // 设置成功
                 }
             });
             wx.updateTimelineShareData({
-                title: '德圣银杏汇', // 分享标题
+                title: '大家湛景满园', // 分享标题
                 link: "{{$url}}", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-                imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.jpg', // 分享图标
+                imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.png', // 分享图标
                 success: function () {
                     // 设置成功
                 }
@@ -372,7 +372,7 @@
                     title: '大家湛景满园',
                     desc: '稽山下 二环里 宋韵美学著品',
                     link: 'http://wls.pinecc.cn/',
-                    imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.jpg',
+                    imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.png',
                     trigger: function (res) {
                         //alert('用户点击');
                     },
