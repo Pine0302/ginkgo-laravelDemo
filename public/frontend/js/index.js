@@ -32,7 +32,7 @@ var mySwiper = new Swiper('.swiper-container', {
 })
 
 var bgAudio = new Audio();
-    bgAudio.src = 'media/bg.mp3';
+    bgAudio.src = '../../frontend/media/bg.mp3';
     bgAudio.loop = 'loop'
     bgAudio.load();
 
@@ -44,16 +44,20 @@ bgAudio.addEventListener("loadedmetadata", function() {
     bgAudio.play();
     loadImages(function() {
         new Promise(function (resolve) {
-            mySwiper.slideNext();
-            resolve()
+            setTimeout(() => {
+                mySwiper.slideNext();
+                resolve()
+            }, 1000)
         }).then(function () {
-            mySwiper.removeSlide(0);
+            setTimeout(() => {
+                mySwiper.removeSlide(0);
+            }, 800)
         })
     });
 })
 
 bgAudio.addEventListener("loadstart", function() {
-    $('.js-load-bar').text('90%');
+    // $('.js-load-bar').text('90%');
 })
 
 
@@ -85,12 +89,12 @@ $(document).ready(function(){
     $('.page2 .img-list>img').click(function() {
         var pageNum = $(this).data('page');
         var index = $(this).data('index');
-        $(this).attr('src', 'images/img2-2_' + index + '.png');
+        $(this).attr('src', '../../frontend/images/img2-2_' + index + '.png');
         setTimeout(() => {
             mySwiper.slideTo(pageNum);
         }, 500)
         setTimeout(() => {
-            $(this).attr('src', 'images/img2-2_' + index + '_dark.png');
+            $(this).attr('src', '../../frontend/images/img2-2_' + index + '_dark.png');
         }, 600)
     })
 
