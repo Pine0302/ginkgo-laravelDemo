@@ -277,12 +277,64 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
     <script type="text/javascript" src="../../frontend/js/index.js"></script>
     <script>
+
+        wx.config({
+            debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+            appId: "{{ $appId }}", // 必填，公众号的唯一标识
+            timestamp: {{$timestamp}}, // 必填，生成签名的时间戳
+            nonceStr: "{{$nonceStr}}", // 必填，生成签名的随机串
+            signature: "{{$signature}}",// 必填，签名
+            jsApiList: [
+                'updateAppMessageShareData',
+                'updateTimelineShareData',
+                'checkJsApi',
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+                'startRecord',
+                'stopRecord',
+                'onVoiceRecordEnd',
+                'playVoice',
+                'onVoicePlayEnd',
+                'pauseVoice',
+                'stopVoice',
+                'uploadVoice',
+                'downloadVoice',
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+                'onMenuShareQQ',
+                'onMenuShareWeibo',
+                'hideMenuItems',
+                'showMenuItems'
+            ] // 必填，需要使用的JS接口列表
+        });
+
+        wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
+            wx.updateAppMessageShareData({
+                title: '微楼书', // 分享标题
+                desc: '微楼书', // 分享描述
+                link: "{{$url}}", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.jpg', // 分享图标
+                success: function () {
+                    // 设置成功
+                }
+            });
+            wx.updateTimelineShareData({
+                title: '德圣银杏汇', // 分享标题
+                link: "{{$url}}", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.jpg', // 分享图标
+                success: function () {
+                    // 设置成功
+                }
+            })
+        });
+/*
+
         $.ajax({
             type: "GET",
-            url: "http://wls.pinecc.cn/",
+            url: "http://wls.pinecc.cn/jssdk",
             data: {
                 url: window.location.href
             },
@@ -343,6 +395,7 @@
             error: function(data) {
             }
         })
+*/
 
     </script>
 </body>
