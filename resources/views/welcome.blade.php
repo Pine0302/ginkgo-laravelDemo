@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>大家</title>
+    <title>大家湛景满园</title>
     <meta name="viewport" content="width=device-width, minimum-scale = 1, maximum-scale =3, target-densitydpi=device-dpi">
     <link rel="stylesheet" href="../../frontend/css/swiper-3.3.1.min.css">
     <link rel="stylesheet" href="../../frontend/css/effect.css">
@@ -372,7 +372,7 @@
                     title: '大家湛景满园',
                     desc: '稽山下 二环里 宋韵美学著品',
                     link: 'http://wls.pinecc.cn/',
-                    imgUrl: 'http://wls.pinecc.cn/../../frontend/images/imgUrl.jpg',
+                    imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.jpg',
                     trigger: function (res) {
                         //alert('用户点击');
                     },
