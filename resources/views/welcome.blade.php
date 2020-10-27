@@ -64,11 +64,11 @@
                 <img src="../../frontend/images/font2-1.png" class="font2-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
                 <img src="../../frontend/images/img2-1.png" class="img2-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
                 <div class="img-list">
-                    <img src="../../frontend/images/img2-2_01_dark.png" class="img2-2_01 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="0.3s" data-page="2" data-index="01">
-                    <img src="../../frontend/images/img2-2_02_dark.png" class="img2-2_02 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration=".8s" swiper-animate-delay="0.6s" data-page="4" data-index="02">
-                    <img src="../../frontend/images/img2-2_03_dark.png" class="img2-2_03 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="0.9s" data-page="6" data-index="03">
-                    <img src="../../frontend/images/img2-2_04_dark.png" class="img2-2_04 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration=".8s" swiper-animate-delay="1.2s" data-page="10" data-index="04">
-                    <img src="../../frontend/images/img2-2_05_dark.png" class="img2-2_05 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="1.5s" data-page="11" data-index="05">
+                    <img src="../../frontend/images/img2-2_01.png" class="img2-2_01 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="0.3s" data-page="2" data-index="01">
+                    <img src="../../frontend/images/img2-2_02.png" class="img2-2_02 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration=".8s" swiper-animate-delay="0.6s" data-page="4" data-index="02">
+                    <img src="../../frontend/images/img2-2_03.png" class="img2-2_03 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="0.9s" data-page="6" data-index="03">
+                    <img src="../../frontend/images/img2-2_04.png" class="img2-2_04 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration=".8s" swiper-animate-delay="1.2s" data-page="10" data-index="04">
+                    <img src="../../frontend/images/img2-2_05.png" class="img2-2_05 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="1.5s" data-page="11" data-index="05">
                 </div>
                 <img src="../../frontend/images/arrow-down.png" class="arrow">
             </div>

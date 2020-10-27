@@ -88,14 +88,7 @@ $(document).ready(function(){
 
     $('.page2 .img-list>img').click(function() {
         var pageNum = $(this).data('page');
-        var index = $(this).data('index');
-        $(this).attr('src', '../../frontend/images/img2-2_' + index + '.png');
-        setTimeout(() => {
-            mySwiper.slideTo(pageNum);
-        }, 500)
-        setTimeout(() => {
-            $(this).attr('src', '../../frontend/images/img2-2_' + index + '_dark.png');
-        }, 600)
+        mySwiper.slideTo(pageNum);
     })
 
     $('.page12 .font12-2>img').click(function() {
