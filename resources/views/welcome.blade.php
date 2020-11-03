@@ -243,7 +243,7 @@
                 <img src="../../frontend/images/img12-1.png" class="img12-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
                 <img src="../../frontend/images/img13-1.png" class="img13-1 ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
                 <div class="btn-group">
-                    <a href="https://www.amap.com/place/B0FFGQ991E">
+                    <a href="https://www.amap.com/place/B0FFM9MJF7">
                         <img src="../../frontend/images/btn-nav.png" class="btn-nav ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
                     </a>
                     <a href="tel:0575-88990088">
