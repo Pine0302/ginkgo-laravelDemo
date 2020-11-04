@@ -12,13 +12,13 @@ var mySwiper = new Swiper('.swiper-container', {
     noSwipingClass: 'stop-swiping',
     roundLengths : true,
     onSlideNextEnd: function(swiper) {
-        if (swiper.activeIndex == 12) {
+        if (swiper.activeIndex == 13) {
             $('.page-end').hide()
         }
 
     },
     onSlidePrevEnd: function(swiper) {
-        if (swiper.activeIndex == 11) {
+        if (swiper.activeIndex == 12) {
             $('.page-end').show()
         }
     },
