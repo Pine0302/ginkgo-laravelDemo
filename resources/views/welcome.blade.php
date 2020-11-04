@@ -60,15 +60,29 @@
                 <img src="../../frontend/images/s-tip.png" class="s-tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".8s" swiper-animate-delay="0.8s">
                 <img src="../../frontend/images/arrow-down.png" class="arrow">
             </div>
+            <div class="swiper-slide page1-1">
+                <img src="../../frontend/images/img1_1-line.png" class="img1_1-line ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
+                <img src="../../frontend/images/font1_1-1.png" class="font1_1-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s" swiper-animate-delay="0.3s">
+                <img src="../../frontend/images/img2-1.png" class="img2-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s" swiper-animate-delay="0.6s">
+                <div class="font1_1-2">
+                    <img src="../../frontend/images/font1_1-2_01.png" class="font1_1-2_01 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.9s">
+                    <img src="../../frontend/images/font1_1-2_02.png" class="font1_1-2_02 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="1.2s">
+                    <img src="../../frontend/images/font1_1-2_03.png" class="font1_1-2_03 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="1.5s">
+                    <img src="../../frontend/images/font1_1-2_04.png" class="font1_1-2_04 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="1.8s">
+                    <img src="../../frontend/images/font1_1-2_05.png" class="font1_1-2_05 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="2.1s">
+                </div>
+                <img src="../../frontend/images/font-tip.png" class="font-tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".8s" swiper-animate-delay="0.8s">
+                <img src="../../frontend/images/arrow-down.png" class="arrow">
+            </div>
             <div class="swiper-slide page2">
                 <img src="../../frontend/images/font2-1.png" class="font2-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
                 <img src="../../frontend/images/img2-1.png" class="img2-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
                 <div class="img-list">
-                    <img src="../../frontend/images/img2-2_01.png" class="img2-2_01 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="0.3s" data-page="2" data-index="01">
-                    <img src="../../frontend/images/img2-2_02.png" class="img2-2_02 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration=".8s" swiper-animate-delay="0.6s" data-page="4" data-index="02">
-                    <img src="../../frontend/images/img2-2_03.png" class="img2-2_03 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="0.9s" data-page="6" data-index="03">
-                    <img src="../../frontend/images/img2-2_04.png" class="img2-2_04 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration=".8s" swiper-animate-delay="1.2s" data-page="10" data-index="04">
-                    <img src="../../frontend/images/img2-2_05.png" class="img2-2_05 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="1.5s" data-page="11" data-index="05">
+                    <img src="../../frontend/images/img2-2_01.png" class="img2-2_01 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="0.3s" data-page="3" data-index="01">
+                    <img src="../../frontend/images/img2-2_02.png" class="img2-2_02 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration=".8s" swiper-animate-delay="0.6s" data-page="5" data-index="02">
+                    <img src="../../frontend/images/img2-2_03.png" class="img2-2_03 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="0.9s" data-page="7" data-index="03">
+                    <img src="../../frontend/images/img2-2_04.png" class="img2-2_04 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration=".8s" swiper-animate-delay="1.2s" data-page="11" data-index="04">
+                    <img src="../../frontend/images/img2-2_05.png" class="img2-2_05 ani" swiper-animate-effect="slideInRight" swiper-animate-duration=".8s" swiper-animate-delay="1.5s" data-page="12" data-index="05">
                 </div>
                 <img src="../../frontend/images/arrow-down.png" class="arrow">
             </div>
@@ -228,9 +242,9 @@
                 <img src="../../frontend/images/img12-1.png" class="img12-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
                 <img src="../../frontend/images/font12-1.png" class="font12-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
                 <div class="font12-2">
-                    <img src="../../frontend/images/font12-2_01.png" class="font12-2_01 ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".5s" swiper-animate-delay="0.3s" data-page="13" data-index="1">
-                    <img src="../../frontend/images/font12-2_02.png" class="font12-2_02 ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".5s" swiper-animate-delay="0.6s" data-page="14" data-index="2">
-                    <img src="../../frontend/images/font12-2_03.png" class="font12-2_03 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.9s" data-page="15" data-index="3">
+                    <img src="../../frontend/images/font12-2_01.png" class="font12-2_01 ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".5s" swiper-animate-delay="0.3s" data-page="14" data-index="1">
+                    <img src="../../frontend/images/font12-2_02.png" class="font12-2_02 ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".5s" swiper-animate-delay="0.6s" data-page="15" data-index="2">
+                    <img src="../../frontend/images/font12-2_03.png" class="font12-2_03 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.9s" data-page="16" data-index="3">
                 </div>
                 <div class="font12-3">
                     <img src="../../frontend/images/font12-3_01.png" class="font12-3_01 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="1.2s">
@@ -313,8 +327,8 @@
 
         wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
             wx.updateAppMessageShareData({
-                title: '大家湛景满园', // 分享标题
-                desc: '稽山下 二环里 宋韵美学著品', // 分享描述
+                title: '大家湛景·满园', // 分享标题
+                desc: '稽山前·二环里·宋韵美学著品', // 分享描述
                 link: "{{$url}}", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
                 imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.png', // 分享图标
                 success: function () {
@@ -322,7 +336,7 @@
                 }
             });
             wx.updateTimelineShareData({
-                title: '大家湛景满园', // 分享标题
+                title: '大家湛景·满园', // 分享标题
                 link: "{{$url}}", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
                 imgUrl: 'http://wls.pinecc.cn/frontend/images/imgUrl.png', // 分享图标
                 success: function () {

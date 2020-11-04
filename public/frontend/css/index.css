@@ -286,6 +286,70 @@ body .swiper-container {
     left: 2.89rem;
 }
 
+.page1-1.swiper-slide{
+    background: url(../images/bg2.png) no-repeat no-repeat;
+}
+
+.img1_1-line {
+    mix-blend-mode: multiply;
+    width: 4.04rem;
+    top: 1.71rem;
+    left: 1.78rem;
+}
+
+.font1_1-1 {
+    width: 5.19rem;
+    top: 3.58rem;
+    left: 1.14rem;
+}
+
+.page1-1 .img2-1 {
+    width: .9rem;
+    top: 5rem;
+    left: 3.32rem;
+    mix-blend-mode: multiply;
+}
+
+.font1_1-2 {
+    position: absolute;
+    width: 5.11rem;
+    height: 2rem;
+    top: 6.34rem;
+    left: 1.24rem;
+}
+
+.font1_1-2 img {
+    height: .19rem;
+}
+
+.font1_1-2_01 {
+    top: 0;
+    left: .87rem;
+}
+
+.font1_1-2_02 {
+    top: .44rem;
+    left: 0;
+}
+.font1_1-2_03 {
+    top: .88rem;
+    left: .75rem;
+}
+.font1_1-2_04 {
+    top: 1.32rem;
+    left: 1.43rem;
+}
+.font1_1-2_05 {
+    top: 1.76rem;
+    left: .11rem;
+}
+
+.page1-1.swiper-slide .font-tip {
+    width: 2.43rem;
+    top: 10.53rem;
+    left: 2.56rem;
+}
+
 .page2.swiper-slide{
     background: url(../images/bg2.png) no-repeat no-repeat;
     background-size: cover;
@@ -819,9 +883,9 @@ body .swiper-container {
 }
 
 .img13-1 {
-    width: 6.18rem;
+    width: 6.25rem;
     top: 2.31rem;
-    left: .66rem;
+    left: .61rem;
     mix-blend-mode: multiply;
 }
 
