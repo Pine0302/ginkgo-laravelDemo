@@ -18,7 +18,7 @@ var mySwiper = new Swiper('.swiper-container', {
 
     },
     onInit: function(swiper) { //Swiper2.x的初始化是onFirstInit
-        swiperAnimateCache(swiper); //隐藏动画元素 
+        swiperAnimateCache(swiper); //隐藏动画元素
         swiperAnimate(swiper); //初始化完成开始动画
     },
     onSlideChangeEnd: function(swiper) {
@@ -38,7 +38,7 @@ loadImages(function() {
 function loadImages(callback) {
     callback = callback ? callback : function() {};
     var imagesLoad = new common.imgload();
-    imagesLoad.file = ['./images/answer-bg.png', './images/arrow.png', './images/arrow-down.png', './images/bg.png', './images/bg2.png', './images/bg3.png', './images/code.png', './images/font1-1_01.png', './images/font1-1_02.png', './images/font1-2.png','./images/font1-3.png', './images/font8-1.png', './images/font8-2.png', './images/font9-1_01.png', './images/font9-1_02.png', './images/font9-2.png', './images/font9-3.png', './images/get-btn.png', './images/line.png', './images/loading.png', './images/logo.png', './images/next-btn.png', './images/s-logo.png', './images/tip.png', './images/w-line.png', './images/w-tip.png'];
+    imagesLoad.file = ['../../frontend/images/answer-bg.png', '../../frontend/images/arrow.png', '../../frontend/images/arrow-down.png', '../../frontend/images/bg.png', '../../frontend/images/bg2.png', '../../frontend/images/bg3.png', '../../frontend/images/code.png', '../../frontend/images/font1-1_01.png', '../../frontend/images/font1-1_02.png', '../../frontend/images/font1-2.png','../../frontend/images/font1-3.png', '../../frontend/images/font8-1.png', '../../frontend/images/font8-2.png', '../../frontend/images/font9-1_01.png', '../../frontend/images/font9-1_02.png', '../../frontend/images/font9-2.png', '../../frontend/images/font9-3.png', '../../frontend/images/get-btn.png', '../../frontend/images/line.png', '../../frontend/images/loading.png', '../../frontend/images/logo.png', '../../frontend/images/next-btn.png', '../../frontend/images/s-logo.png', '../../frontend/images/tip.png', '../../frontend/images/w-line.png', '../../frontend/images/w-tip.png'];
     imagesLoad.callbackFn = function(res) {
         $('.js-load-bar').text(res);
         if (res == '100%') return callback();
@@ -398,7 +398,7 @@ $(document).ready(function(){
         currentValue = $(this).data('value');
         currentRemark = $(this).data('remark');
         var dataConfig = subjectConfig[currentKey];
-        
+
         var value = dataConfig.multiple ? JSON.parse(currentValue || '[]') : [currentValue];
         var list = dataConfig.optionList.map(data => `<li data-multiple=${dataConfig.multiple} data-value=${data.value} class="${value.includes(data.value) ? 'choose' : ''}" data-remark=${data.hasRemark}>
             <i class="circle"></i>
@@ -450,7 +450,7 @@ $(document).ready(function(){
                     $(this).parents('.content').find('input').show();
                 }
             }
-            
+
             let selectClass = '.select-' + currentKey + ' .select';
             if (!currentValue.length) {
                 $(selectClass).addClass('placeholder');
@@ -551,7 +551,7 @@ $(document).ready(function(){
     $('.get-btn').click(function(){
         mySwiper.slideNext();
     })
-    
+
 })
 
 
