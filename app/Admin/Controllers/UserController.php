@@ -34,6 +34,11 @@ class UserController extends AdminController
         $grid->column('remember_token', __('Remember token'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
+        $grid->column('mobile', __('Mobile'));
+        $grid->column('sex', __('Sex'));
+        $grid->column('age', __('Age'));
+
+
 
         return $grid;
     }
@@ -56,6 +61,9 @@ class UserController extends AdminController
         $show->field('remember_token', __('Remember token'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
+        $show->field('mobile', __('Mobile'));
+        $show->field('sex', __('Sex'));
+        $show->field('age', __('Age'));
 
         return $show;
     }
@@ -74,6 +82,9 @@ class UserController extends AdminController
         $form->datetime('email_verified_at', __('Email verified at'))->default(date('Y-m-d H:i:s'));
         $form->password('password', __('Password'));
         $form->text('remember_token', __('Remember token'));
+        $form->mobile('mobile', __('Mobile'));
+        $form->text('sex', __('Sex'));
+        $form->number('age', __('Age'));
 
         return $form;
     }

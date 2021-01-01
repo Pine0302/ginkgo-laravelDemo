@@ -19,5 +19,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/user', 'UserController@index');
 Route::get('/jssdk', 'UserController@jssdk');
 Route::get('/', 'UserController@Home');
-Route::post('/user', 'UserController@collect');
-Route::post('/user_visit', 'UserController@collectVisit');
+Route::post('/question', 'QuestionController@collectAnswer');
+
