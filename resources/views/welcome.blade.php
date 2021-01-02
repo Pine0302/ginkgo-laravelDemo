@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>绿城·郡安里</title>
+    <title>绿城•莫干山郡安里</title>
     <meta name="viewport" content="width=device-width, minimum-scale = 1, maximum-scale = 1, target-densitydpi=device-dpi">
     <link rel="stylesheet" href="../../frontend/css/swiper-3.3.1.min.css">
     <link rel="stylesheet" href="../../frontend/css/effect.css">
