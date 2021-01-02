@@ -258,30 +258,21 @@
         </div>
 
         <div class="swiper-slide page9 stop-swiping">
-            <img src="../../frontend/images/s-logo.png" class="s-logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
-            <img src="../../frontend/images/logo.png" class="logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
-            <div class="font9-1">
-                <img src="../../frontend/images/font9-1_01.png" class="font9-1_01 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
-                <img src="../../frontend/images/font9-1_02.png" class="font9-1_02 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
-                <img src="../../frontend/images/w-line.png" class="w-line ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
-                <img src="../../frontend/images/w-tip.png" class="w-tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
+            <div class="content ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".5s">
+                <img src="../../frontend/images/s-logo.png" class="s-logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
+                <img src="../../frontend/images/logo.png" class="logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
+                <div class="font9-1">
+                    <img src="../../frontend/images/font9-1_01.png" class="font9-1_01 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
+                    <img src="../../frontend/images/font9-1_02.png" class="font9-1_02 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
+                    <img src="../../frontend/images/w-line.png" class="w-line ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
+                    <img src="../../frontend/images/w-tip.png" class="w-tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
+                </div>
+                <img src="../../frontend/images/font9-2.png" class="font9-2 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
+                <div class="font9-3-box">
+                    <img src="../../frontend/images/code.png" class="code ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
+                    <img src="../../frontend/images/font9-3.png" class="font9-3 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
+                </div>
             </div>
-            <img src="../../frontend/images/font9-2.png" class="font9-2 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
-            <div class="font9-3-box">
-                <img src="../../frontend/images/code.png" class="code ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
-                <img src="../../frontend/images/font9-3.png" class="font9-3 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
-            </div>
-        </div>
-
-        <div class="swiper-slide page9 stop-swiping">
-            <img src="../../frontend/images/s-logo.png" class="s-logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
-            <img src="../../frontend/images/logo.png" class="logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
-            <div class="font9-1">
-                <img src="../../frontend/images/font9-1_01.png" class="font9-1_01 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
-                <img src="../../frontend/images/font9-1_02.png" class="font9-1_02 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
-            </div>
-            <img src="../../frontend/images/font9-2.png" class="font9-2 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
-            <img src="../../frontend/images/font9-3.png" class="font9-3 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
         </div>
     </div>
 </div>
