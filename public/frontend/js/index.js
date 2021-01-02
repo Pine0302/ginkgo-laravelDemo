@@ -26,14 +26,34 @@ var mySwiper = new Swiper('.swiper-container', {
     },
 })
 
-loadImages(function() {
-    new Promise(function (resolve) {
-        mySwiper.slideNext();
-        resolve()
-    }).then(function () {
-        mySwiper.removeSlide(0);
-    })
+var bgAudio = new Audio();
+    bgAudio.src = '../../frontend/media/bg.mp3';
+    bgAudio.loop = 'loop'
+    bgAudio.load();
+
+document.addEventListener("WeixinJSBridgeReady", function() {
+    bgAudio.play();
 });
+
+bgAudio.addEventListener("loadedmetadata", function() {
+    bgAudio.play();
+    loadImages(function() {
+        new Promise(function (resolve) {
+            setTimeout(() => {
+                mySwiper.slideNext();
+                resolve()
+            }, 1000)
+        }).then(function () {
+            setTimeout(() => {
+                mySwiper.removeSlide(0);
+            }, 800)
+        })
+    });
+})
+
+bgAudio.addEventListener("loadstart", function() {
+    // $('.js-load-bar').text('90%');
+})
 
 function loadImages(callback) {
     callback = callback ? callback : function() {};
@@ -116,7 +136,7 @@ const subjectConfig = {
     '08': {
         multiple: false,
         optionList: [{
-            value: '一次'
+            value: '1次'
         }, {
             value: '2次'
         }, {
