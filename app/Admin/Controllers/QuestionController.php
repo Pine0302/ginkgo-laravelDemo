@@ -25,7 +25,6 @@ class QuestionController extends AdminController
     protected function grid()
     {
         $grid = new Grid(new Question());
-        $grid->disableExport();
         $grid->disableCreateButton();
         $grid->model()->orderBy('id', 'desc');
         $grid->filter(function($filter){
@@ -34,6 +33,9 @@ class QuestionController extends AdminController
             // 在这里添加字段过滤器
             $filter->like('mobile', 'mobile');
         });
+
+        $grid->disableExport();
+
 
         $grid->actions(function ($actions) {
             // 去掉删除
@@ -48,25 +50,29 @@ class QuestionController extends AdminController
         $grid->column('age', "年龄");
         $grid->column('mobile', "手机号");
 
-        /*$grid->column('area', __('Area'));
-        $grid->column('isold', __('Isold'));
-        $grid->column('trade', __('Trade'));
-        $grid->column('percentage', __('Percentage'));
-        $grid->column('with_who', __('With who'));
-        $grid->column('info_method', __('Info method'));
-        $grid->column('concern_factor', __('Concern factor'));
-        $grid->column('product_type', __('Product type'));
-        $grid->column('area_size', __('Area size'));
-        $grid->column('house_type', __('House type'));
-        $grid->column('house_face', __('House face'));
-        $grid->column('total_price', __('Total price'));
-        $grid->column('public_space', __('Public space'));
-        $grid->column('renovation', __('Renovation'));
-        $grid->column('renovation_style', __('Renovation style'));
-        $grid->column('service_type', __('Service type'));
-        $grid->column('profit_type', __('Profit type'));
-        $grid->column('morgage_5010', __('Morgage 5010'));
-        $grid->column('recomend', __('Recomend'));*/
+        $grid->column('isold', '是否老业主')->hide();
+        $grid->column('trade', '从事行业');
+        $grid->column('area', '居住区域');
+        $grid->column('percentage', '年平均旅游频次');
+        $grid->column('with_who', '和谁一起度假');
+        $grid->column('info_method', '信息渠道');
+        $grid->column('concern_factor', '关注因素');
+        $grid->column('product_type', '倾向的产品类型');
+        $grid->column('area_size', '公寓产品面积');
+        $grid->column('house_type', '户型选择');
+        $grid->column('house_face', '房间朝向');
+        $grid->column('total_price', '总价范围');
+        $grid->column('public_space', '公共空间生活配套');
+        $grid->column('renovation', '装修情况');
+        $grid->column('renovation_style', '精装修风格');
+        $grid->column('service_type', '物业服务配套');
+        $grid->column('profit_type','产品托管服务');
+        $grid->column('morgage_5010', '是否能接受50%首付款，按揭最多十年政策');
+        $grid->column('recomend','是否推荐');
+
+        $grid->export(function ($export) {
+            $export->filename('Filename');
+        });
 
         return $grid;
     }
