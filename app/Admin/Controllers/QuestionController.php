@@ -34,7 +34,7 @@ class QuestionController extends AdminController
             $filter->like('mobile', 'mobile');
         });
 
-        $grid->disableExport();
+   //     $grid->disableExport();
 
 
         $grid->actions(function ($actions) {
@@ -50,7 +50,7 @@ class QuestionController extends AdminController
         $grid->column('age', "年龄");
         $grid->column('mobile', "手机号");
 
-        $grid->column('isold', '是否老业主')->hide();
+        $grid->column('isold', '是否老业主');
         $grid->column('trade', '从事行业');
         $grid->column('area', '居住区域');
         $grid->column('percentage', '年平均旅游频次');
