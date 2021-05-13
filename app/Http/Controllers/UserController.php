@@ -51,6 +51,10 @@ class UserController extends Controller
             'signature'=>$jssdkInfo['signature'],
             'url'=>$request->url(),
         ];
+        $response = $this->wechat_app->oauth->scopes(['snsapi_base'])
+            ->redirect("http://www.baidu.com");
+        $user =  $this->wechat_app->oauth->user();
+        print_r(123);exit;
 
         /*$user = $this->users->find($id);*/
         //return view('welcome',$jssdkInfo);
@@ -78,49 +82,7 @@ class UserController extends Controller
         return view('user');
     }
 
-    public function collect(Request $request)
-    {
-        $name = $request->input('name');
-        $mobile = $request->input('mobile');
-        $dates = $request->input('dates');
-        $num = $request->input('num');
-        DB::table('appointment')->insert(
-            [
-                'name' => $name,
-                'mobile' => $mobile,
-                'dates' => $dates,
-                'num' => $num,
-                'create_at'=>time(),
-            ]
-        );
-        return response()->json([
-            'status' => 1,
-            'msg' => 'success'
-        ]);
-    }
 
-    public function collectVisit(Request $request)
-    {
-        $name = $request->input('name');
-        $mobile = $request->input('mobile');
-        $dates = $request->input('dates');
-        $dates_visit = $request->input('dates_visit');
-        $num = $request->input('num');
-        DB::table('appointment_visit')->insert(
-            [
-                'name' => $name,
-                'mobile' => $mobile,
-                'dates' => $dates,
-                'dates_visit' => $dates_visit,
-                'num' => $num,
-                'create_at'=>time(),
-            ]
-        );
-        return response()->json([
-            'status' => 1,
-            'msg' => 'success'
-        ]);
-    }
 
     public function jssdk(Request $request)
     {
@@ -141,6 +103,29 @@ class UserController extends Controller
             'status' => 1,
             'msg' => 'success',
             'data'=>$jssdkInfo,
+        ]);
+    }
+
+    public function collectChat(Request $request)
+    {
+        $name = $request->input('name');
+        $mobile = $request->input('mobile');
+        $dates = $request->input('dates');
+        $dates_visit = $request->input('dates_visit');
+        $num = $request->input('num');
+        DB::table('appointment_visit')->insert(
+            [
+                'name' => $name,
+                'mobile' => $mobile,
+                'dates' => $dates,
+                'dates_visit' => $dates_visit,
+                'num' => $num,
+                'create_at'=>time(),
+            ]
+        );
+        return response()->json([
+            'status' => 1,
+            'msg' => 'success'
         ]);
     }
 
