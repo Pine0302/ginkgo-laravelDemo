@@ -11,7 +11,7 @@
     <script type="text/javascript" src="../../frontend/js/jquery-1.10.1.min.js"></script>
     <script type="text/javascript" src="../../frontend/js/swiper-3.3.1.jquery.min.js"></script>
     <script type="text/javascript" src="../../frontend/js/swiper.animate1.0.2.min.js"></script>
-    <script type="text/javascript" src="../../frontend/js/common.js"></script>
+   {{-- <script type="text/javascript" src="../../frontend/js/common.js"></script>--}}
     <script>
         var deviceWidth = Math.min(750, window.innerWidth);
         document.documentElement.style.fontSize = parseInt(deviceWidth / 7.5) + "px"
@@ -21,7 +21,7 @@
 <body>
 
 
-<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
 <script type="text/javascript" src="../../frontend/js/index.js"></script>
 <script>
 
@@ -53,10 +53,10 @@
     });
     wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
         wx.updateAppMessageShareData({
-            title: '大家群聊', // 分享标题
-            desc: '大家群聊', // 分享描述
+            title: 'ENJOY SHAOXING|绍兴媒体为大家建了一个群', // 分享标题
+            desc: '参与群聊，戳！', // 分享描述
             link: "{{$url}}", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
-            imgUrl: 'http://fast.pinecc.cn/frontend/images/img.jpeg', // 分享图标
+            imgUrl: 'http://dajia.pinecc.cn/img.png', // 分享图标
          //   imgUrl: 'http://fast.pinecc.cn/frontend/images/imgUrl.png', // 分享图标
             success: function () {
                 // 设置成功

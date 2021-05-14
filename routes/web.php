@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 });*/
 Route::get('/user', 'UserController@index');
 Route::get('/jssdk', 'UserController@jssdk');
-Route::get('/', 'UserController@Home');
+Route::get('/', 'UserController@wechatAuth');
+Route::get('/home', 'UserController@Home');
+Route::get('/test', 'UserController@test');
 Route::post('/question', 'QuestionController@collectAnswer');
+Route::get('/auth', 'UserController@auth');
 

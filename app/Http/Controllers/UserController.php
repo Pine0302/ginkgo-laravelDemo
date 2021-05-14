@@ -9,14 +9,12 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use EasyWeChat\Factory;
+use Illuminate\Support\Facades\Redis;
+
 
 
 class UserController extends Controller
 {
-    public function __construct()
-    {
-        parent::__construct();
-    }
 
     /**
      * user仓储的实现
@@ -24,6 +22,67 @@ class UserController extends Controller
      * @var UserRepository
      */
     protected $users;
+
+    private $wechatUser;
+
+
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+    /**
+     * 微信授权
+     */
+    public function wechatAuth(Request $request){
+
+        $config = [
+            // ...
+            'app_id' =>  env('WECHAT_APPID'),
+            'secret' =>  env('WECHAT_APP_SECRET'),
+            'oauth' => [
+                'scopes'   => ['snsapi_base'],
+                'callback' => 'auth',
+            ],
+            // ..
+        ];
+
+        $app = Factory::officialAccount($config);
+        $oauth = $app->oauth;
+        // 未登录
+        if (empty($request->session()->get('openid'))) {
+            return $oauth->redirect();
+        }else{
+            $this->wechatUser = $request->session()->get('openid');
+            return redirect("/home");
+        }
+        // 已经登录过
+
+    }
+
+    public function auth(Request $request)
+    {
+        $config = [
+            'app_id' =>  env('WECHAT_APPID'),
+            'secret' =>  env('WECHAT_APP_SECRET'),
+            'oauth' => [
+                'scopes'   => ['snsapi_base'],
+                'callback' => 'auth',
+            ],
+        ];
+        $app = Factory::officialAccount($config);
+        $oauth = $app->oauth;
+        // 获取 OAuth 授权结果用户信息
+        $this->wechatUser = $oauth->user();
+        //Redis::set('pppp','1234');
+        $wecahtInfo = $this->wechatUser->toArray();
+        $request->session()->put('openid',$wecahtInfo['id']);
+
+        return redirect("/home");
+
+    }
+
+
 
     /**
      * 创建一个新的控制器实例
@@ -37,29 +96,32 @@ class UserController extends Controller
     }*/
 
     public function Home(Request $request){
-        $APIs = [
+       $APIs = [
             'updateAppMessageShareData',
             'updateTimelineShareData'
         ];
         $jssdkInfo = $this->wechat_app->jssdk->buildConfig( $APIs, false, false, false);
-
+        print_r($request->session()->get('openid'));
 
         $data = [
             'appId'=>$jssdkInfo['appId'],
             'timestamp'=>$jssdkInfo['timestamp'],
             'nonceStr'=>$jssdkInfo['nonceStr'],
             'signature'=>$jssdkInfo['signature'],
-            'url'=>$request->url(),
+            //'url'=>$request->url(),
+            'url'=>"https://dajia.pinecc.cn",
         ];
-        $response = $this->wechat_app->oauth->scopes(['snsapi_base'])
-            ->redirect("http://www.baidu.com");
-        $user =  $this->wechat_app->oauth->user();
-        print_r(123);exit;
 
-        /*$user = $this->users->find($id);*/
-        //return view('welcome',$jssdkInfo);
         return view('welcome',$data);
     }
+
+
+
+    public function test(Request $request){
+
+
+    }
+
 
     /**
      * 展示给定用户的信息
