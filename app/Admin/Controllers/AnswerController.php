@@ -34,6 +34,7 @@ class AnswerController extends AdminController
         $grid->column('content', __('Content'));
         $grid->column('create_at', __('Create at'));
 
+
         return $grid;
     }
 

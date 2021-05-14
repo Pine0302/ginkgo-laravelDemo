@@ -26,7 +26,7 @@ class UserController extends Controller
     private $wechatUser;
 
 
-    public function __construct()
+    public function __construct(Request $request)
     {
         parent::__construct();
     }
@@ -54,7 +54,7 @@ class UserController extends Controller
             return $oauth->redirect();
         }else{
             $this->wechatUser = $request->session()->get('openid');
-            return redirect("/home");
+            return redirect("/");
         }
         // 已经登录过
 
@@ -96,22 +96,29 @@ class UserController extends Controller
     }*/
 
     public function Home(Request $request){
+
+
+
+        $oauth = $this->wechat_app->oauth;
+
+        if (empty($request->session()->get('openid'))) {
+            return $oauth->redirect();
+        }
+
        $APIs = [
             'updateAppMessageShareData',
             'updateTimelineShareData'
         ];
         $jssdkInfo = $this->wechat_app->jssdk->buildConfig( $APIs, false, false, false);
-        print_r($request->session()->get('openid'));
 
         $data = [
             'appId'=>$jssdkInfo['appId'],
             'timestamp'=>$jssdkInfo['timestamp'],
             'nonceStr'=>$jssdkInfo['nonceStr'],
             'signature'=>$jssdkInfo['signature'],
-            //'url'=>$request->url(),
-            'url'=>"https://dajia.pinecc.cn",
+            'url'=>$request->url(),
         ];
-
+        print_r($request->session()->get('openid'));exit;
         return view('welcome',$data);
     }
 
@@ -170,19 +177,14 @@ class UserController extends Controller
 
     public function collectChat(Request $request)
     {
-        $name = $request->input('name');
-        $mobile = $request->input('mobile');
-        $dates = $request->input('dates');
-        $dates_visit = $request->input('dates_visit');
-        $num = $request->input('num');
-        DB::table('appointment_visit')->insert(
+        print_r(123);exit;
+        $message = $request->input('message');
+        DB::table('message')->insert(
             [
-                'name' => $name,
-                'mobile' => $mobile,
-                'dates' => $dates,
-                'dates_visit' => $dates_visit,
-                'num' => $num,
+                'content' => $message,
+                'openid' => $request->session()->get('openid'),
                 'create_at'=>time(),
+                'show'=>1
             ]
         );
         return response()->json([

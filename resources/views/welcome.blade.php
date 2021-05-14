@@ -55,7 +55,7 @@
         wx.updateAppMessageShareData({
             title: 'ENJOY SHAOXING|绍兴媒体为大家建了一个群', // 分享标题
             desc: '参与群聊，戳！', // 分享描述
-            link: "{{$url}}", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+            link: "https://dajia.pinecc.cn", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
             imgUrl: 'http://dajia.pinecc.cn/img.png', // 分享图标
          //   imgUrl: 'http://fast.pinecc.cn/frontend/images/imgUrl.png', // 分享图标
             success: function () {
