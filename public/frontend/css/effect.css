@@ -30,43 +30,43 @@
 
 @-webkit-keyframes scaleInBig {
     0% {
-        -webkit-transform: scale(.8,.8);
-        -ms-transform: scale(.8,.8);
-        -o-transform: scale(.8,.8);
-        transform: scale(.8,.8);
-    }
-    50% {
         -webkit-transform: scale(1,1);
         -ms-transform: scale(1,1);
         -o-transform: scale(1,1);
         transform: scale(1,1);
     }
-    100% {
+    50% {
         -webkit-transform: scale(.8,.8);
         -ms-transform: scale(.8,.8);
         -o-transform: scale(.8,.8);
         transform: scale(.8,.8);
+    }
+    100% {
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
     }
 }
 
 @keyframes scaleInBig {
     0% {
-        -webkit-transform: scale(.8,.8);
-        -ms-transform: scale(.8,.8);
-        -o-transform: scale(.8,.8);
-        transform: scale(.8,.8);
-    }
-    50% {
         -webkit-transform: scale(1,1);
         -ms-transform: scale(1,1);
         -o-transform: scale(1,1);
         transform: scale(1,1);
     }
-    100% {
+    50% {
         -webkit-transform: scale(.8,.8);
         -ms-transform: scale(.8,.8);
         -o-transform: scale(.8,.8);
         transform: scale(.8,.8);
+    }
+    100% {
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
     }
 }
 
@@ -1208,99 +1208,99 @@
 
 @keyframes butterflying1 {
     0% {
-        background-image: url('../../frontend/images/butterfly1-u.png')
+        background-image: url('../images/butterfly1-u.png')
     }
     50% {
-        background-image: url('../../frontend/images/butterfly1-e.png')
+        background-image: url('../images/butterfly1-e.png')
     }
     100% {
-        background-image: url('../../frontend/images/butterfly1-u.png')
+        background-image: url('../images/butterfly1-u.png')
     }
 }
 
 @-webkit-keyframes butterflying1 {
     0% {
-        background-image: url('../../frontend/images/butterfly1-u.png')
+        background-image: url('../images/butterfly1-u.png')
     }
     50% {
-        background-image: url('../../frontend/images/butterfly1-e.png')
+        background-image: url('../images/butterfly1-e.png')
     }
     100% {
-        background-image: url('../../frontend/images/butterfly1-u.png')
+        background-image: url('../images/butterfly1-u.png')
     }
 }
 
 
 @keyframes butterflying2 {
     0% {
-        background-image: url('../../frontend/images/butterfly2-e.png')
+        background-image: url('../images/butterfly2-e.png')
     }
     50% {
-        background-image: url('../../frontend/images/butterfly2-u.png')
+        background-image: url('../images/butterfly2-u.png')
     }
     100% {
-        background-image: url('../../frontend/images/butterfly2-e.png')
+        background-image: url('../images/butterfly2-e.png')
     }
 }
 
 @-webkit-keyframes butterflying2 {
     0% {
-        background-image: url('../../frontend/images/butterfly2-e.png')
+        background-image: url('../images/butterfly2-e.png')
     }
     50% {
-        background-image: url('../../frontend/images/butterfly2-u.png')
+        background-image: url('../images/butterfly2-u.png')
     }
     100% {
-        background-image: url('../../frontend/images/butterfly2-e.png')
+        background-image: url('../images/butterfly2-e.png')
     }
 }
 
 @keyframes butterflying3 {
     0% {
-        background-image: url('../../frontend/images/butterfly3-e.png')
+        background-image: url('../images/butterfly3-e.png')
     }
     50% {
-        background-image: url('../../frontend/images/butterfly3-u.png')
+        background-image: url('../images/butterfly3-u.png')
     }
     100% {
-        background-image: url('../../frontend/images/butterfly3-e.png')
+        background-image: url('../images/butterfly3-e.png')
     }
 }
 
 @-webkit-keyframes butterflying3 {
     0% {
-        background-image: url('../../frontend/images/butterfly3-e.png')
+        background-image: url('../images/butterfly3-e.png')
     }
     50% {
-        background-image: url('../../frontend/images/butterfly3-u.png')
+        background-image: url('../images/butterfly3-u.png')
     }
     100% {
-        background-image: url('../../frontend/images/butterfly3-e.png')
+        background-image: url('../images/butterfly3-e.png')
     }
 }
 
 
 @keyframes butterflying4 {
     0% {
-        background-image: url('../../frontend/images/butterfly4-u.png')
+        background-image: url('../images/butterfly4-u.png')
     }
     50% {
-        background-image: url('../../frontend/images/butterfly4-e.png')
+        background-image: url('../images/butterfly4-e.png')
     }
     100% {
-        background-image: url('../../frontend/images/butterfly4-u.png')
+        background-image: url('../images/butterfly4-u.png')
     }
 }
 
 @-webkit-keyframes butterflying4 {
     0% {
-        background-image: url('../../frontend/images/butterfly4-u.png')
+        background-image: url('../images/butterfly4-u.png')
     }
     50% {
-        background-image: url('../../frontend/images/butterfly4-e.png')
+        background-image: url('../images/butterfly4-e.png')
     }
     100% {
-        background-image: url('../../frontend/images/butterfly4-u.png')
+        background-image: url('../images/butterfly4-u.png')
     }
 }
 
@@ -1347,29 +1347,29 @@
       -webkit-transform: scale3d(.3, .3, .3);
       transform: scale3d(.3, .3, .3);
     }
-
+  
     50% {
       opacity: 1;
     }
   }
-
+  
 @keyframes zoomIn {
     0% {
       opacity: 0;
       -webkit-transform: scale3d(.3, .3, .3);
       transform: scale3d(.3, .3, .3);
     }
-
+  
     50% {
       opacity: 1;
     }
 }
-
+  
 .zoomIn {
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
   }
-
+  
 
 @keyframes fly {
     0% {
@@ -1443,35 +1443,35 @@
     90%{
         opacity: 1;
     }
-
+  
     100%{
       -webkit-transform: translate3d(0, -100%, 0);
       transform: translate3d(0, -100%, 0);
       opacity: 0;
     }
   }
-
+  
   @keyframes lightMoveUp {
     0% {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
       opacity: 0;
     }
-
+  
     10%{
         opacity: 1;
     }
     90%{
         opacity: 1;
     }
-
+  
     100%{
       -webkit-transform: translate3d(0, -100%, 0);
       transform: translate3d(0, -100%, 0);
       opacity: 0;
     }
   }
-
+  
   .lightMoveUp {
     -webkit-animation-name: lightMoveUp;
     animation-name: lightMoveUp;
@@ -1491,7 +1491,7 @@
       opacity: 1;
     }
   }
-
+  
   @keyframes bhMoveTopLeft {
     0% {
         -webkit-transform: translate3d(-400%, -400%, 0);
@@ -1504,7 +1504,7 @@
         opacity: 1;
       }
   }
-
+  
   .bhMoveTopLeft {
     -webkit-animation-name: bhMoveTopLeft;
     animation-name: bhMoveTopLeft;
@@ -1522,7 +1522,7 @@
       opacity: 1;
     }
   }
-
+  
   @keyframes bhMoveBottomLeft {
     0% {
         -webkit-transform: translate3d(-400%, 400%, 0);
@@ -1535,7 +1535,7 @@
         opacity: 1;
       }
   }
-
+  
   .bhMoveBottomLeft {
     -webkit-animation-name: bhMoveBottomLeft;
     animation-name: bhMoveBottomLeft;
@@ -1553,7 +1553,7 @@
       opacity: 1;
     }
   }
-
+  
   @keyframes bhMoveLeft {
     0% {
         -webkit-transform: translate3d(-400%, 0, 0);
@@ -1566,7 +1566,7 @@
         opacity: 1;
       }
   }
-
+  
   .bhMoveLeft {
     -webkit-animation-name: bhMoveLeft;
     animation-name: bhMoveLeft;
@@ -1584,7 +1584,7 @@
       opacity: 1;
     }
   }
-
+  
   @keyframes bhMoveTopRight {
     0% {
         -webkit-transform: translate3d(400%, -400%, 0);
@@ -1597,7 +1597,7 @@
         opacity: 1;
       }
   }
-
+  
   .bhMoveTopRight {
     -webkit-animation-name: bhMoveTopRight;
     animation-name: bhMoveTopRight;
@@ -1615,7 +1615,7 @@
       opacity: 1;
     }
   }
-
+  
   @keyframes bhMoveBottomRight {
     0% {
         -webkit-transform: translate3d(400%, 400%, 0);
@@ -1628,7 +1628,7 @@
         opacity: 1;
       }
   }
-
+  
   .bhMoveBottomRight {
     -webkit-animation-name: bhMoveBottomRight;
     animation-name: bhMoveBottomRight;
@@ -1646,7 +1646,7 @@
       opacity: 1;
     }
   }
-
+  
   @keyframes bhMoveRight {
     0% {
         -webkit-transform: translate3d(400%, 0, 0);
@@ -1659,7 +1659,7 @@
         opacity: 1;
       }
   }
-
+  
   .bhMoveRight {
     -webkit-animation-name: bhMoveRight;
     animation-name: bhMoveRight;
@@ -1677,7 +1677,7 @@
       opacity: 1;
     }
   }
-
+  
   @keyframes penMoveLeft {
     0% {
         -webkit-transform: translate3d(2rem, 0, 0);
@@ -1690,7 +1690,7 @@
         opacity: 1;
       }
   }
-
+  
   .penMoveLeft {
     -webkit-animation-name: penMoveLeft;
     animation-name: penMoveLeft;
@@ -1702,26 +1702,26 @@
       transform: translate3d(0, -100%, 0);
       visibility: visible;
     }
-
+  
     100% {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
   }
-
+  
   @keyframes slideInDown {
     0% {
       -webkit-transform: translate3d(0, -100%, 0);
       transform: translate3d(0, -100%, 0);
       visibility: visible;
     }
-
+  
     100% {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
     }
   }
-
+  
   .slideInDown {
     -webkit-animation-name: slideInDown;
     animation-name: slideInDown;

@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>绿城·郡安里</title>
-    <meta name="viewport" content="width=device-width, minimum-scale = 1, maximum-scale = 1, target-densitydpi=device-dpi">
+    <title>大家湛景满园</title>
+    <meta name="viewport" content="width=device-width, minimum-scale = 1, maximum-scale =1, target-densitydpi=device-dpi">
     <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
     <link rel="stylesheet" href="css/effect.css">
     <link rel="stylesheet" href="css/index.css">
@@ -12,6 +12,7 @@
     <script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
     <script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/html2canvas.js"></script>
     <script>
     var deviceWidth = Math.min(750, window.innerWidth);
     document.documentElement.style.fontSize = parseInt(deviceWidth / 7.5) + "px"
@@ -22,6 +23,11 @@
     <!-- <div class="audio-btn play">
         <img src="images/musicon.png">
     </div> -->
+    <div class="page3-extra">
+        <img src="images/img3-1.png" class="img3-1">
+        <img src="images/arrow-up.png" class="arrow-up">
+    </div>
+    
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide page0 stop-swiping">
@@ -35,264 +41,110 @@
                 </div>
             </div>
             <div class="swiper-slide page1">
-                <img src="images/s-logo.png" class="s-logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
                 <img src="images/logo.png" class="logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
-                <div class="font1-1">
-                    <img src="images/font1-1_01.png" class="font1-1_01 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
-                    <img src="images/font1-1_02.png" class="font1-1_02 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
+                <div class="font">
+                    <div class="time" id="time"></div>
+                    <div class="date" id="date">5月11日星期二</div>
                 </div>
-                <div class="font1-2-box">
-                    <img src="images/font1-2.png" class="font1-2 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
-                    <img src="images/tip.png" class="tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
-                    <img src="images/line.png" class="line ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
-                </div>
-                <img src="images/font1-3.png" class="font1-3 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
-                <img src="images/arrow.png" class="mini-arrow ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
+                <img src="images/notice.png" class="notice">
+                <img src="images/arrow-down.png" class="arrow">
+                <div class="tip">向上滑动解锁屏幕</div>
+                <img src="images/photo.png" class="photo">
             </div>
-
             <div class="swiper-slide page2 stop-swiping">
-                <div class="subject-form">
-                    <div class="item">
-                        <h3>
-                            <span class="num">01</span>
-                            <span class="title">您的姓名</span>
-                        </h3>
-                        <input data-id="name"/>
-                    </div>
-                    <div class="item">
-                        <h3>
-                            <span class="num">02</span>
-                            <span class="title">联系方式</span>
-                        </h3>
-                        <input data-id="mobile" type="tel"/>
-                    </div>
-                    <div class="item select-03">
-                        <h3>
-                            <span class="num">03</span>
-                            <span class="title">您的性别</span>
-                        </h3>
-                        <div class="select placeholder" data-key="03" data-id="sex">请选择</div>
-                    </div>
-                    <div class="item select-04">
-                        <h3>
-                            <span class="num">04</span>
-                            <span class="title">您的年龄</span>
-                        </h3>
-                        <input data-id="age" type="tel"/>
-                    </div>
-                    <img src="images/next-btn.png" class="next-btn">
+                <img src="images/logo.png" class="logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
+                <img src="images/font2-1.png" class="font2-1 ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".3s">
+                <div class="font2-2">
+                    <img src="images/font2-2_01.png" class="font2-2_01 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s" swiper-animate-delay="0.6s">
+                    <img src="images/font2-2_02.png" class="font2-2_02 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s" swiper-animate-delay="0.8s">
                 </div>
+                <div class="font2-3 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.2s" swiper-animate-delay="1s">
+                    <img src="images/font2-3.png" class="ani infinite" swiper-animate-effect="scaleInBig" swiper-animate-duration="2s" swiper-animate-delay="0.1s">
+                </div>
+                <img src="images/tip.png" class="tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
             </div>
-
             <div class="swiper-slide page3 stop-swiping">
-                <div class="subject-form">
-                    <div class="item select-05">
-                        <h3>
-                            <span class="num">05</span>
-                            <span class="title">您的居住区域是</span>
-                        </h3>
-                        <div class="select placeholder" data-key="05" data-id="area">请选择</div>
+                <div class="content" id="content">
+                    <div class="font3-1">
+                        <img src="images/font3-1_01.png" class="font3-1_01" data-time="300">
+                        <img src="images/font3-1_02.png" class="font3-1_02" data-time="300">
+                        <img src="images/font3-1_03.png" class="font3-1_03" data-time="300">
+                        <img src="images/font3-1_04.png" class="font3-1_04" data-time="300">
+                        <img src="images/font3-1_05.png" class="font3-1_05" data-time="300">
+                        <img src="images/font3-1_06.png" class="font3-1_06" data-time="300">
+                        <img src="images/font3-1_07.png" class="font3-1_07" data-time="300">
+                        <img src="images/font3-1_08.png" class="font3-1_08" data-time="300">
+                        <img src="images/font3-1_09.png" class="font3-1_09" data-time="300">
+                        <img src="images/font3-1_10.png" class="font3-1_10" data-time="300">
+                        <img src="images/font3-1_11.png" class="font3-1_11" data-time="300">
+                        <img src="images/font3-1_12.png" class="font3-1_12" data-time="300">
+                        <img src="images/font3-1_13.png" class="font3-1_13" data-time="300">
+                        <img src="images/font3-1_14.png" class="font3-1_14" data-time="300">
+                        <img src="images/font3-1_15.png" class="font3-1_15" data-time="300">
                     </div>
-                    <div class="item select-06">
-                        <h3>
-                            <span class="num">06</span>
-                            <span class="title">是否蓝绿城老业主</span>
-                        </h3>
-                        <div class="select placeholder" data-key="06" data-id="isold">请选择</div>
+                    <div class="font3-2">
+                        <img src="images/font3-2_01.png" class="font3-2_01">
+                        <img src="images/font3-2_02.png" class="font3-2_02">
+                        <img src="images/font3-2_03.png" class="font3-2_03">
+                        <img src="images/font3-2_04.png" class="font3-2_04">
+                        <img src="images/font3-2_05.png" class="font3-2_05">
+                        <img src="images/font3-2_06.png" class="font3-2_06">
+                        <img src="images/font3-2_07.png" class="font3-2_07">
+                        <img src="images/font3-2_08.png" class="font3-2_08">
+                        <img src="images/font3-2_09.png" class="font3-2_09">
+                        <img src="images/font3-2_10.png" class="font3-2_10">
+                        <img src="images/font3-2_11.png" class="font3-2_11">
+                        <img src="images/font3-2_12.png" class="font3-2_12">
                     </div>
-                    <div class="item select-07">
-                        <h3>
-                            <span class="num">07</span>
-                            <span class="title">您从事的行业是</span>
-                        </h3>
-                        <div class="select placeholder" data-key="07" data-id="trade">请选择</div>
+                    <div class="font3-3">
+                        <img src="images/font3-3_01.png" class="font3-3_01">
+                        <img src="images/font3-3_02.png" class="font3-3_02">
+                        <img src="images/font3-3_03.png" class="font3-3_03">
+                        <img src="images/font3-3_04.png" class="font3-3_04">
+                        <img src="images/font3-3_05.png" class="font3-3_05">
+                        <img src="images/font3-3_06.png" class="font3-3_06">
                     </div>
-                    <div class="item select-08">
-                        <h3>
-                            <span class="num">08</span>
-                            <span class="title">您每年平均旅游的频次是多少</span>
-                        </h3>
-                        <div class="select placeholder" data-key="08" data-id="percentage">请选择</div>
+                    <div class="font3-4">
+                        <img src="images/font3-4_01.png" class="font3-4_01">
+                        <img src="images/font3-4_02.png" class="font3-4_02">
+                        <img src="images/font3-4_03.png" class="font3-4_03">
                     </div>
-                    <img src="images/next-btn.png" class="next-btn">
+                    <div class="font3-4_04">
+                        <img src="images/font3-4_04.png">
+                    </div>
+                    <div class="font3-5">
+                        <img src="images/font3-5_01.png" class="font3-5_01">
+                        <img src="images/font3-5_02.png" class="font3-5_02">
+                        <img src="images/font3-5_03.png" class="font3-5_03">
+                        <img src="images/font3-5_04.png" class="font3-5_04">
+                        <img src="images/font3-5_05.png" class="font3-5_05">
+                    </div>
+                    <div class="font3-6">
+                        <img src="images/font3-6.png">
+                    </div>
                 </div>
             </div>
-
-            <div class="swiper-slide page4 stop-swiping">
-                <div class="subject-form">
-                    <div class="item select-09">
-                        <h3>
-                            <span class="num">09</span>
-                            <span class="title">您一般和谁一起度假</span>
-                        </h3>
-                        <div class="select placeholder" data-key="09" data-id="with_who">请选择</div>
+            <div class="swiper-slide page4">
+                <div class="content">
+                    <img src="images/logo.png" class="logo">
+                    <img src="images/s-logo.png" class="s-logo">
+                    <div class="font4-1">
+                        <p>长按页面，保留截图</p>
+                        <p>即可前往大家湛景·满园园来生活馆</p>
+                        <p>领取表白惊喜礼一份，敬请期待！</p>
                     </div>
-                    <div class="item select-10">
-                        <h3>
-                            <span class="num">10</span>
-                            <span class="title">您获知度假物业的主要信息渠道是</span>
-                        </h3>
-                        <div class="select placeholder" data-key="10" data-id="info_method">请选择</div>
-                    </div>
-                    <div class="item select-11">
-                        <h3>
-                            <span class="num">11</span>
-                            <span class="title">郡安里项目位于莫干山主景区内，假设您购买本项目，您最关注哪些因素</span>
-                        </h3>
-                        <div class="select placeholder" data-key="11" data-id="concern_factor">请选择</div>
-                    </div>
-                    <div class="item select-12">
-                        <h3>
-                            <span class="num">12</span>
-                            <span class="title">假设您购买郡安里项目，您比较倾向的产品类型</span>
-                        </h3>
-                        <div class="select placeholder" data-key="12" data-id="product_type">请选择</div>
-                    </div>
-                    <img src="images/next-btn.png" class="next-btn">
-                </div>
-            </div>
-
-            <div class="swiper-slide page5 stop-swiping">
-                <div class="subject-form">
-                    <div class="item select-13">
-                        <h3>
-                            <span class="num">13</span>
-                            <span class="title">郡安里正在做高端度假公寓的产品设计，假设您购买本项目，您会接受多少面积段的公寓产品呢</span>
-                        </h3>
-                        <div class="select placeholder" data-key="13" data-id="area_size">请选择</div>
-                    </div>
-                    <div class="item select-14">
-                        <h3>
-                            <span class="num">14</span>
-                            <span class="title">若购买本项目您对于户型选择上，更注重哪些方面</span>
-                        </h3>
-                        <div class="select placeholder" data-key="14" data-id="house_type">请选择</div>
-                    </div>
-                    <div class="item select-15">
-                        <h3>
-                            <span class="num">15</span>
-                            <span class="title">您对于房间朝向有没有特殊需求</span>
-                        </h3>
-                        <div class="select placeholder" data-key="15" data-id="house_face">请选择</div>
-                    </div>
-                    <img src="images/next-btn.png" class="next-btn">
-                </div>
-            </div>
-
-            <div class="swiper-slide page6 stop-swiping">
-                <div class="subject-form">
-                    <div class="item select-16">
-                        <h3>
-                            <span class="num">16</span>
-                            <span class="title">如果您购买我们郡安里的产品，您可能接受的总价范围是</span>
-                        </h3>
-                        <div class="select placeholder" data-key="16" data-id="total_price">请选择</div>
-                    </div>
-                    <div class="item select-17">
-                        <h3>
-                            <span class="num">17</span>
-                            <span class="title">对度假型文旅项目园区公共空间生活配套，您认为最需要的是</span>
-                        </h3>
-                        <div class="select placeholder" data-key="17" data-id="public_space">请选择</div>
-                    </div>
-                    <div class="item select-18">
-                        <h3>
-                            <span class="num">18</span>
-                            <span class="title">您希望入住的度假产品装修情况是</span>
-                        </h3>
-                        <div class="select placeholder" data-key="18" data-id="renovation">请选择</div>
-                    </div>
-                    <div class="item select-19">
-                        <h3>
-                            <span class="num">19</span>
-                            <span class="title">精装修风格您希望是</span>
-                        </h3>
-                        <div class="select placeholder" data-key="19" data-id="renovation_style">请选择</div>
-                    </div>
-                    <img src="images/next-btn.png" class="next-btn">
-                </div>
-            </div>
-
-            <div class="swiper-slide page7 stop-swiping">
-                <div class="subject-form">
-                    <div class="item select-20">
-                        <h3>
-                            <span class="num">20</span>
-                            <span class="title">在物业服务配套方面，您比较重视以下哪种服务</span>
-                        </h3>
-                        <div class="select placeholder" data-key="20" data-id="service_type">请选择</div>
-                    </div>
-                    <div class="item select-21">
-                        <h3>
-                            <span class="num">21</span>
-                            <span class="title">关于产品托管服务，您更倾向与哪种收益方式</span>
-                        </h3>
-                        <div class="select placeholder" data-key="21" data-id="profit_type">请选择</div>
-                    </div>
-                    <div class="item select-22">
-                        <h3>
-                            <span class="num">22</span>
-                            <span class="title">若购买本项目产品，您是否能接受50%首付款，按揭最多十年政策</span>
-                        </h3>
-                        <div class="select placeholder" data-key="22" data-id="morgage_5010">请选择</div>
-                    </div>
-                    <div class="item select-23">
-                        <h3>
-                            <span class="num">23</span>
-                            <span class="title">您会推荐您的亲朋好友来郡安里，一起分享这种美好的度假生活吗</span>
-                        </h3>
-                        <div class="select placeholder" data-key="23" data-id="recomend">请选择</div>
-                    </div>
-                    <img src="images/next-btn.png" class="next-btn" data-submit="false" id="final-next-btn">
-                </div>
-            </div>
-
-            <div class="swiper-slide page8 stop-swiping">
-                <img src="images/font8-1.png" class="font8-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
-                <img src="images/font8-2.png" class="font8-2 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s" swiper-animate-delay="0.3s">
-                <img src="images/get-btn.png" class="get-btn ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
-                <div class="tip-box">
-                    <img src="images/w-tip.png" class="w-tip">
-                    <img src="images/w-line.png" class="w-line">
-                </div>
-            </div>
-
-            <div class="swiper-slide page9 stop-swiping">
-                <div class="content ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".5s">
-                    <img src="images/s-logo.png" class="s-logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
-                    <img src="images/logo.png" class="logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
-                    <div class="font9-1">
-                        <img src="images/font9-1_01.png" class="font9-1_01 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
-                        <img src="images/font9-1_02.png" class="font9-1_02 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
-                        <img src="images/w-line.png" class="w-line ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
-                        <img src="images/w-tip.png" class="w-tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.3s">
-                    </div>
-                    <img src="images/font9-2.png" class="font9-2 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
-                    <div class="font9-3-box">
-                        <img src="images/code.png" class="code ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
-                        <img src="images/font9-3.png" class="font9-3 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s" swiper-animate-delay="0.6s">
+                    <div class="font4-2">谢谢你，在绍兴，传递家的圆满</div>
+                    <div class="font">
+                        <p id="value"></p>
+                        <p class="tip"> ——— 微信用户 </p>
                     </div>
                 </div>
+                <img src="images/message-list.png" class="message-list ani infinite" swiper-animate-effect="slideInRightMsg" swiper-animate-duration="17s" swiper-animate-delay="0.1s">
+                <input type="text" id="message" placeholder="点击写留言  说说你对#大家绍兴#的心里话">
+                <img id="toImg">
             </div>
         </div>
     </div>
-    <div class="popover">
-        <div class="cover"></div>
-        <div class="content">
-            <!-- <h3>单选题</h3>
-            <ul>
-                <li class="choose">
-                    <i class="circle"></i>
-                    <span>上海</span>
-                </li>
-                <li>
-                    <i class="circle"></i>
-                    <span>浙江</span>
-                </li>
-            </ul> -->
-        </div>
-    </div>
-
     <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script>
