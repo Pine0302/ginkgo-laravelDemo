@@ -51,10 +51,10 @@
             </div>
             <div class="swiper-slide page2 stop-swiping">
                 <img src="../../frontend/images/logo.png" class="logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
-                <img src="../../frontend/images/font2-1.png" class="font2-1 ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".3s">
+                <!-- <img src="../../frontend/images/font2-1.png" class="font2-1 ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".3s"> -->
                 <div class="font2-2">
-                    <img src="../../frontend/images/font2-2_01.png" class="font2-2_01 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s" swiper-animate-delay="0.6s">
-                    <img src="../../frontend/images/font2-2_02.png" class="font2-2_02 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s" swiper-animate-delay="0.8s">
+                    <img src="../../frontend/images/font2-2_01.png" class="font2-2_01 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s" swiper-animate-delay="0.3s">
+                    <img src="../../frontend/images/font2-2_02.png" class="font2-2_02 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s" swiper-animate-delay="0.6s">
                 </div>
                 <div class="font2-3 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.2s" swiper-animate-delay="1s">
                     <img src="../../frontend/images/font2-3.png" class="ani infinite" swiper-animate-effect="scaleInBig" swiper-animate-duration="2s" swiper-animate-delay="0.1s">
@@ -127,9 +127,9 @@
                     <img src="../../frontend/images/logo.png" class="logo">
                     <!-- <img src="../../frontend/images/s-logo.png" class="s-logo"> -->
                     <div class="font4-1">
-                        <p>长按页面，保留截图</p>
-                        <p>即可前往大家湛景·满园园来生活馆</p>
-                        <p>领取表白惊喜礼一份，敬请期待！</p>
+                        <p>发送留言，长按保存截图</p>
+                        <p>截止5月24日前点赞数最高的留言</p>
+                        <p>即可获得惊喜表白礼一份</p>
                     </div>
                     <div class="font4-2">谢谢你，在绍兴，传递家的圆满</div>
                     <div class="font">
@@ -144,6 +144,13 @@
                     <div class="send-btn" id="send-btn">发送</div>
                 </div>
                 <img id="toImg">
+                <img src="../../frontend/images/arrow-up.png" class="arrow-up">
+            </div>
+            <div class="swiper-slide page5">
+                <img src="../../frontend/images/logo2.png" class="logo2">
+                <img src="../../frontend/images/font5-1.png" class="font5-1 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.6s">
+                <img src="../../frontend/images/font5-2.png" class="font5-2 ani" swiper-animate-effect="slideInRight" swiper-animate-duration="0.6s">
+                <img src="../../frontend/images/font5-3.png" class="font5-3 ani" swiper-animate-effect="showOpacity" swiper-animate-duration="0.6s" swiper-animate-delay="0.5s">
             </div>
         </div>
     </div>

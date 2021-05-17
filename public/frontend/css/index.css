@@ -192,9 +192,9 @@ body .swiper-container {
 } */
 
 .swiper-slide .logo {
-    width: 1.87rem;
-    top: .45rem;
-    left: .52rem;
+    width: 1.37rem;
+    top: .53rem;
+    left: .51rem;
 }
 
 .page1.swiper-slide{
@@ -260,7 +260,7 @@ body .swiper-container {
 .font2-2 {
     width: 3rem;
     position: absolute;
-    top: 4.55rem;
+    top: 3.81rem;
     left: 2.26rem;
 }
 
@@ -277,7 +277,7 @@ body .swiper-container {
 .font2-3 {
     width: 4.73rem;
     height: 2.06rem;
-    top: 6.88rem;
+    top: 6.22rem;
     left: 1.39rem;
     position: absolute;
 }
@@ -466,15 +466,12 @@ body .swiper-container {
 }
 
 .page4 .input-box {
-    background-color: #fff;
-    width: 5.61rem;
     top: 7.38rem;
-    left: 1.1rem;
+    left: 1rem;
     position: absolute;
     z-index: 100;
     display: flex;
     align-items: center;
-    padding: 0.05rem 0.08rem;
 }
 
 .page4 input {
@@ -482,15 +479,22 @@ body .swiper-container {
     border: none;
     outline: none;
     flex: 1;
+    background-color: #fff;
+    width: 4.8rem;
+    padding: 0 0.08rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border-radius: 0.04rem;
 }
 
 .page4 .input-box .send-btn {
-    background-color: #1ce14c;
+    background-color: #fff;
     font-size: 0.24rem;
-    color: #fff;
-    padding: 0.03rem 0.1rem;
+    padding: 0 0.1rem;
     border-radius: 0.04rem;
     margin-left: 0.1rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
 }
 
 .page4 .font {
@@ -565,6 +569,53 @@ body .swiper-container {
     animation-name: slideInRightMsg;
     animation-timing-function: linear;
     -webkit-animation-timing-function: linear; /* Safari 和 Chrome */
+}
+
+.page4 .arrow-up {
+    position: absolute;
+    width: 0.31rem;
+    bottom: 1.14rem;
+    left: 3.6rem;
+
+    z-index: 1001;
+    -webkit-animation-name: arrowUp;
+    -webkit-animation-duration: 2s;
+    animation-name: arrowUp;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.page5{
+    background: url(../images/bg5.png) no-repeat no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.page5 .logo2 {
+    width: 1.37rem;
+    top: 0.58rem;
+    left: 0.56rem;
+}
+
+.font5-1 {
+    width: 3.63rem;
+    top: 3.08rem;
+    left: 1.25rem;
+}
+
+.font5-2 {
+    width: 4.84rem;
+    top: 3.96rem;
+    left: 1.51rem;
+}
+
+.font5-3 {
+    width: 4.58rem;
+    top: 6.1rem;
+    left: 1.47rem;
 }
 
 
