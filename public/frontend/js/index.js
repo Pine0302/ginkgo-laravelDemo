@@ -78,10 +78,12 @@ document.addEventListener("WeixinJSBridgeReady", function() {
 loadImages(function() {
     new Promise(function (resolve) {
         mySwiper.slideNext();
-        bgAudio3.play();
         resolve()
     }).then(function () {
         mySwiper.removeSlide(0);
+        setTimeout(() => {
+            bgAudio3.play();
+        }, 100)
     })
 });
 
