@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="swiper-slide page1">
-                <img src="../../frontend/images/logo.png" class="logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
+                <img src="../../frontend/images/logo.png" class="logo">
                 <div class="font">
                     <div class="time" id="time"></div>
                     <div class="date" id="date"></div>
@@ -50,7 +50,7 @@
                 <img src="../../frontend/images/photo.png" class="photo">
             </div>
             <div class="swiper-slide page2 stop-swiping">
-                <img src="../../frontend/images/logo.png" class="logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
+                <img src="../../frontend/images/logo.png" class="logo">
                 <!-- <img src="../../frontend/images/font2-1.png" class="font2-1 ani" swiper-animate-effect="zoomIn" swiper-animate-duration=".3s"> -->
                 <div class="font2-2">
                     <img src="../../frontend/images/font2-2_01.png" class="font2-2_01 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s" swiper-animate-delay="0.3s">
