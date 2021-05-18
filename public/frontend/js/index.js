@@ -23,7 +23,7 @@ var mySwiper = new Swiper('.swiper-container', {
             showMessage();
             $('.page3').addClass('stop-swiping');
         } else {
-            document.title = '大家湛景满园'
+            document.title = 'ENJOY SHAOXING|绍兴媒体为大家建了一个群'
             $('.page3-extra').hide();
             hideMessage();
         }
@@ -40,7 +40,7 @@ var mySwiper = new Swiper('.swiper-container', {
             showMessage();
             $('.page3').addClass('stop-swiping');
         } else {
-            document.title = '大家湛景满园'
+            document.title = 'ENJOY SHAOXING|绍兴媒体为大家建了一个群'
             $('.page3-extra').hide();
             hideMessage();
         }
@@ -226,7 +226,7 @@ function showMessage() {
                 }, 500)
                 $('.page3').removeClass('stop-swiping');
             }
-        }, $(imgList[i]).data('time') ? i * $(imgList[i]).data('time') : (14 * 300 + (i - 14) * 1200))
+        }, $(imgList[i]).data('time') ? $(imgList[i]).data('time') : (14 * 300 + (i - 14) * 1200))
     }
 }
 
