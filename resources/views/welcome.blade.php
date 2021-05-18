@@ -143,6 +143,9 @@
                     <input type="text" id="message" placeholder="点击写留言  说说你对#大家绍兴#的心里话" type="search">
                     <div class="send-btn" id="send-btn">发送</div>
                 </div>
+                <div id='flower-content' class="flower-content ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
+                    <div id="flower-flake" class="flower-flake"></div>
+                </div>
                 <img id="toImg">
                 <img src="../../frontend/images/arrow-up.png" class="arrow-up">
             </div>

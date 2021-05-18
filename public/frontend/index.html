@@ -44,9 +44,9 @@
                 <img src="images/logo.png" class="logo ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
                 <div class="font">
                     <div class="time" id="time"></div>
-                    <div class="date" id="date">5月11日星期二</div>
+                    <div class="date" id="date"></div>
                 </div>
-                <img src="images/notice.png" class="notice">
+                <img src="images/notice.png" class="notice ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.6s" swiper-animate-delay="0.3s">
                 <img src="images/arrow-down.png" class="arrow">
                 <div class="tip">向上滑动解锁屏幕</div>
                 <img src="images/photo.png" class="photo">
@@ -63,7 +63,7 @@
                 </div>
                 <img src="images/tip.png" class="tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
             </div>
-            <div class="swiper-slide page3 stop-swiping">
+            <div class="swiper-slide page3 ">
                 <div class="content" id="content">
                     <div class="font3-1">
                         <img src="images/font3-1_01.png" class="font3-1_01" data-time="300">
@@ -110,7 +110,7 @@
                         <img src="images/font3-4_03.png" class="font3-4_03">
                     </div>
                     <div class="font3-4_04">
-                        <img src="images/font3-4_04.png">
+                        <img src="images/font3-4_04.png" data-play="1">
                     </div>
                     <div class="font3-5">
                         <img src="images/font3-5_01.png" class="font3-5_01">
@@ -127,7 +127,7 @@
             <div class="swiper-slide page4">
                 <div class="content">
                     <img src="images/logo.png" class="logo">
-                    <img src="images/s-logo.png" class="s-logo">
+                    <!-- <img src="images/s-logo.png" class="s-logo"> -->
                     <div class="font4-1">
                         <p>发送留言，长按保存截图</p>
                         <p>截止5月24日前点赞数最高的留言</p>
@@ -139,9 +139,17 @@
                         <p class="tip"> ——— 微信用户 </p>
                     </div>
                 </div>
-                <img src="images/message-list.png" class="message-list ani infinite" swiper-animate-effect="slideInRightMsg" swiper-animate-duration="17s" swiper-animate-delay="0.1s">
-                <input type="text" id="message" placeholder="点击写留言  说说你对#大家绍兴#的心里话">
+                <img src="images/message1.png" class="message1 ani" swiper-animate-effect="slideInRightMsgSingle" swiper-animate-duration="3s" swiper-animate-delay="0.1s">
+                <img src="images/message-list.png" class="message-list ani infinite" swiper-animate-effect="slideInRightMsg" swiper-animate-duration="19s" swiper-animate-delay="0.1s">
+                <div class="input-box">
+                    <input type="text" id="message" placeholder="点击写留言  说说你对#大家绍兴#的心里话" type="search">
+                    <div class="send-btn" id="send-btn">发送</div>
+                </div>
+                <div id='flower-content' class="flower-content ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".5s">
+                    <div id="flower-flake" class="flower-flake"></div>
+                </div>
                 <img id="toImg">
+                <img src="images/arrow-up.png" class="arrow-up">
             </div>
             <div class="swiper-slide page5">
                 <img src="images/logo2.png" class="logo2">

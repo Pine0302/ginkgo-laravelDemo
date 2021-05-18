@@ -339,6 +339,7 @@ body .swiper-container {
     padding-bottom: 1rem;
     overflow-y: auto;
     height: 100vh;
+    display: none;
 }
 
 .page3 .content img {
@@ -466,7 +467,7 @@ body .swiper-container {
 }
 
 .page4 .input-box {
-    top: 7.38rem;
+    top: 8rem;
     left: 1rem;
     position: absolute;
     z-index: 100;
@@ -499,20 +500,23 @@ body .swiper-container {
 
 .page4 .font {
     font-size: 0.24rem;
-    top: 6.5rem;
+    top: 6.4rem;
     position: absolute;
     text-align: center;
     width: 100%;
     display: none;
+    color: #a4031d;
 }
 
 .page4 .font #value {
-    margin-left: -1.6rem;
-    margin-bottom: 0.1rem;
+    width: 3.9rem;
+    margin: 0 auto 0.15rem auto;
+    text-align: left;
 }
 
 .page4 .font .tip {
-    margin-left: 2.6rem;
+    text-align: right;
+    padding-right: 1.8rem;
 }
 
 .page4 #toImg{
@@ -584,6 +588,25 @@ body .swiper-container {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
+}
+
+.flower-content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 99;
+    top: 100vh;
+    left: 0;
+}
+
+.flower-flake {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
 }
 
 .page5{

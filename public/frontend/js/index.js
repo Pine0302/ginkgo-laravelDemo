@@ -163,6 +163,30 @@ $('#send-btn').click(function(){
             error: function() {
             }
         })
+
+        $("#flower-content").css({
+            top: 0
+        });
+        setTimeout(() => {
+            commonFlake({
+                flakeURl: [
+                    '../../frontend/images/a1.png',
+                    '../../frontend/images/a2.png',
+                    '../../frontend/images/a3.png',
+                    '../../frontend/images/a4.png',
+                    '../../frontend/images/a5.png'
+                ],
+                container: $("#flower-content"),
+                $flakeContainer: $('#flower-flake'),
+                width: '.46rem',
+                height: '.46rem'
+            }, 8)
+        }, 1)
+        setTimeout(() => {
+            $("#flower-content").css({
+                top: '100vh'
+            });
+        }, 2500)
     }
 })
 
