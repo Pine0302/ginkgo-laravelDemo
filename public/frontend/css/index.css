@@ -260,7 +260,7 @@ body .swiper-container {
 .font2-2 {
     width: 3rem;
     position: absolute;
-    top: 3.81rem;
+    top: 3.05rem;
     left: 2.26rem;
 }
 
@@ -277,7 +277,7 @@ body .swiper-container {
 .font2-3 {
     width: 4.73rem;
     height: 2.06rem;
-    top: 6.22rem;
+    top: 5.45rem;
     left: 1.39rem;
     position: absolute;
 }
@@ -286,9 +286,15 @@ body .swiper-container {
     width: 100%;
 }
 
+.img2-1 {
+    width: 0.72rem !important;
+    top: 1.72rem;
+    left: 1.75rem;
+}
+
 .page2 .tip {
     width: 2.87rem;
-    bottom: 2.01rem;
+    bottom: 2.69rem;
     left: 2.32rem;
 }
 
@@ -398,7 +404,7 @@ body .swiper-container {
 
 .font3-4_04 img {
     position: relative;
-    width: 5.05rem;
+    width: 3.55rem;
     display: inline-block;
     margin-bottom: 0.5rem;
 }
@@ -639,6 +645,12 @@ body .swiper-container {
     width: 4.58rem;
     top: 6.1rem;
     left: 1.47rem;
+}
+
+.font5-4 {
+    width: 2.7rem;
+    bottom: 1.02rem;
+    right: 1.48rem;
 }
 
 

@@ -58,6 +58,7 @@
                 </div>
                 <div class="font2-3 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.2s" swiper-animate-delay="1s">
                     <img src="../../frontend/images/font2-3.png" class="ani infinite" swiper-animate-effect="scaleInBig" swiper-animate-duration="2s" swiper-animate-delay="0.1s">
+                    <img src="../../frontend/images/img2-1.png" class="img2-1 ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".6s" swiper-animate-delay="2s">
                 </div>
                 <img src="../../frontend/images/tip.png" class="tip ani" swiper-animate-effect="showOpacity" swiper-animate-duration=".3s">
             </div>
@@ -110,15 +111,15 @@
                     <div class="font3-4_04">
                         <img src="../../frontend/images/font3-4_04.png" data-play="1">
                     </div>
-                    <div class="font3-5">
+                    <!-- <div class="font3-5">
                         <img src="../../frontend/images/font3-5_01.png" class="font3-5_01" data-time="31200">
                         <img src="../../frontend/images/font3-5_02.png" class="font3-5_02" data-time="31500">
                         <img src="../../frontend/images/font3-5_03.png" class="font3-5_03" data-time="31800">
                         <img src="../../frontend/images/font3-5_04.png" class="font3-5_04" data-time="32100">
                         <img src="../../frontend/images/font3-5_05.png" class="font3-5_05" data-time="32400">
-                    </div>
+                    </div> -->
                     <div class="font3-6">
-                        <img src="../../frontend/images/font3-6.png" data-time="33600">
+                        <img src="../../frontend/images/font3-6.png">
                     </div>
                 </div>
             </div>
@@ -154,6 +155,7 @@
                 <img src="../../frontend/images/font5-1.png" class="font5-1 ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.6s">
                 <img src="../../frontend/images/font5-2.png" class="font5-2 ani" swiper-animate-effect="slideInRight" swiper-animate-duration="0.6s">
                 <img src="../../frontend/images/font5-3.png" class="font5-3 ani" swiper-animate-effect="showOpacity" swiper-animate-duration="0.6s" swiper-animate-delay="0.5s">
+                <img src="../../frontend/images/font5-4.png" class="font5-4 ani" swiper-animate-effect="showOpacity" swiper-animate-duration="0.6s" swiper-animate-delay="0.8s">
             </div>
         </div>
     </div>
