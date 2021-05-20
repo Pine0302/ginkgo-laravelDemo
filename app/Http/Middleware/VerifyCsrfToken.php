@@ -18,11 +18,11 @@ class VerifyCsrfToken extends Middleware
         "http://ginkgo.pinecc.cn/jssdk",
         "http://fast.pinecc.cn/question",
 
-        "http://dajia.pinecc.cn/home",
-        "http://dajia.pinecc.cn/auth",
-        "http://dajia.pinecc.cn/collectChat",
-        "http://dajia.pinecc.cn/showAllMessages",
-        "http://dajia.pinecc.cn/showSelfMessages",
+        "https://dajia.pinecc.cn/home",
+        "https://dajia.pinecc.cn/auth",
+        "https://dajia.pinecc.cn/collectChat",
+        "https://dajia.pinecc.cn/showAllMessages",
+        "https://dajia.pinecc.cn/showSelfMessages",
         'wechat',
 
     ];

@@ -64,7 +64,7 @@ class CollectController extends Controller
      */
     public function showSelfMessage(Request $request)
     {
-        $openid = $request->session()->get('openid');
+        //$openid = $request->session()->get('openid');
         $openid = "123";
         $ret = DB::table('message')->where('openid', $openid)->orderBy('id','desc')->offset(0)->limit(1)->get();
 

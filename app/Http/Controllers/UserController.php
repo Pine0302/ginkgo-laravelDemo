@@ -99,11 +99,11 @@ class UserController extends Controller
 
 
 
-        $oauth = $this->wechat_app->oauth;
+        /*$oauth = $this->wechat_app->oauth;
 
         if (empty($request->session()->get('openid'))) {
             return $oauth->redirect();
-        }
+        }*/
 
        $APIs = [
             'updateAppMessageShareData',
@@ -118,7 +118,7 @@ class UserController extends Controller
             'signature'=>$jssdkInfo['signature'],
             'url'=>$request->url(),
         ];
-        print_r($request->session()->get('openid'));exit;
+
         return view('welcome',$data);
     }
 
